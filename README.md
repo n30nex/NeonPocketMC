@@ -10,6 +10,30 @@ One release catalog for the NeonPocketMC firmware family. This repository pins t
 
 > **Choose by exact hardware and role. There is no universal image. Never flash an RC52 image to RCC6, or an RCC6 image to RC52.** Attach a suitable LoRa antenna before transmitting.
 
+## Live RCC6 UI
+
+These are direct, pixel-for-pixel captures of the 220×128 framebuffer running on an RCC6—not mockups. They were captured from a temporary diagnostics build based on the exact [`v1.2.0-rc.1`](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v1.2.0-rc.1) source; the capture hook is not included in public firmware.
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/rcc6-ui/rcc6-home.png" alt="RCC6 NeonPocketMC Home dashboard" width="440"><br><strong>Home</strong></td>
+    <td align="center"><img src="docs/images/rcc6-ui/rcc6-nearby.png" alt="RCC6 NeonPocketMC Nearby page" width="440"><br><strong>Nearby</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/rcc6-ui/rcc6-radio.png" alt="RCC6 NeonPocketMC Radio statistics" width="440"><br><strong>Radio statistics</strong></td>
+    <td align="center"><img src="docs/images/rcc6-ui/rcc6-advert.png" alt="RCC6 NeonPocketMC Advert action" width="440"><br><strong>Mesh advert</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/rcc6-ui/rcc6-quick-reply.png" alt="RCC6 NeonPocketMC Quick Reply page" width="440"><br><strong>One-button Quick Reply</strong></td>
+    <td align="center"><img src="docs/images/rcc6-ui/rcc6-diagnostics.png" alt="RCC6 NeonPocketMC Diagnostics page" width="440"><br><strong>Diagnostics</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><img src="docs/images/rcc6-ui/rcc6-power.png" alt="RCC6 NeonPocketMC Power confirmation" width="440"><br><strong>Power confirmation</strong></td>
+  </tr>
+</table>
+
+Capture provenance and checksums are recorded in [`docs/images/rcc6-ui/README.md`](docs/images/rcc6-ui/README.md).
+
 ## Current builds
 
 | Hardware | Role | Current release | Normal install |
