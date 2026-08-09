@@ -1,4 +1,10 @@
-# NeonPocketMC
+<p align="center">
+  <img src="branding/neonpocketmc-mark.png" alt="NeonPocketMC pocket mesh logo" width="180">
+</p>
+
+<h1 align="center">NeonPocketMC</h1>
+
+<p align="center"><strong>One bright interface for pocket-sized MeshCore radios.</strong></p>
 
 One release catalog for the NeonPocketMC firmware family. This repository pins the exact released source for every supported RadioCore build and publishes a combined download bundle.
 
@@ -54,6 +60,8 @@ git submodule update --init --recursive
 - These are community prereleases, not official Heltec or MeshCore firmware.
 
 See [`FLASHING.md`](FLASHING.md) for practical install and recovery instructions.
+
+The next Room Server, shared UI, animated boot, and one-button messaging work is tracked in [`docs/STACK_ROADMAP.md`](docs/STACK_ROADMAP.md).
 
 ## Verification
 
