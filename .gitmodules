@@ -1,0 +1,12 @@
+[submodule "firmware/rc52-companion"]
+	path = firmware/rc52-companion
+	url = https://github.com/n30nex/NeonPocketMC-RC52.git
+[submodule "firmware/rc52-repeater"]
+	path = firmware/rc52-repeater
+	url = https://github.com/n30nex/NeonPocketMC-RC52-Repeater.git
+[submodule "firmware/rcc6-companion"]
+	path = firmware/rcc6-companion
+	url = https://github.com/n30nex/NeonPocketMC-RCC6.git
+[submodule "firmware/rcc6-mqtt-repeater"]
+	path = firmware/rcc6-mqtt-repeater
+	url = https://github.com/n30nex/NeonPocketMC-RCC6-Repeater.git

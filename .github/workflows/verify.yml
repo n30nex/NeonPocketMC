@@ -1,0 +1,20 @@
+name: Verify suite catalog
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out pinned suite source
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Validate catalog and submodule pins
+        run: python scripts/verify_catalog.py

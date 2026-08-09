@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "suite_version": "1.0.0-rc.1",
+  "products": [
+    {
+      "id": "rc52-companion",
+      "hardware": "Heltec RadioCore RC52-L62",
+      "role": "BLE companion with NV3001B TFT",
+      "repository": "https://github.com/n30nex/NeonPocketMC-RC52",
+      "release": "https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.0.0-rc.1",
+      "tag": "v1.0.0-rc.1",
+      "commit": "14b949436d3e9c6200c3384d1963ec39fe2c637d",
+      "submodule": "firmware/rc52-companion",
+      "artifacts": [
+        {"name": "NeonPocketMC-RC52-1.0-RC1.uf2", "size": 758272, "sha256": "791323f36fcf29f69ce0db46f2b1a239dde21a97d1af2c68f56c000d816e177b", "url": "https://github.com/n30nex/NeonPocketMC-RC52/releases/download/v1.0.0-rc.1/NeonPocketMC-RC52-1.0-RC1.uf2"},
+        {"name": "NeonPocketMC-RC52-1.0-RC1.hex", "size": 1065848, "sha256": "f6244ff0f25be4bb8c5e26bae25688ab17fb710a782eeef41e15902feaec7d37", "url": "https://github.com/n30nex/NeonPocketMC-RC52/releases/download/v1.0.0-rc.1/NeonPocketMC-RC52-1.0-RC1.hex"}
+      ]
+    },
+    {
+      "id": "rc52-repeater",
+      "hardware": "Heltec RadioCore RC52-L62",
+      "role": "Headless repeater",
+      "repository": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater",
+      "release": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.0.0-rc.1",
+      "tag": "v1.0.0-rc.1",
+      "commit": "b6949da4ea88925d5193a348303601c3876585fd",
+      "submodule": "firmware/rc52-repeater",
+      "artifacts": [
+        {"name": "NeonPocketMC-RC52-Repeater-v1.0.0-rc.1.uf2", "size": 661504, "sha256": "09e650def7e598ed550b15716b77da691975fcf79ac5c68131720f322dcadd4b", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.0.0-rc.1/NeonPocketMC-RC52-Repeater-v1.0.0-rc.1.uf2"},
+        {"name": "NeonPocketMC-RC52-Repeater-v1.0.0-rc.1.hex", "size": 930283, "sha256": "b1d246ab0da07b1e38ebd981f4b68fefa4e63b267652db669b5b4fb38f1fb4b4", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.0.0-rc.1/NeonPocketMC-RC52-Repeater-v1.0.0-rc.1.hex"}
+      ]
+    },
+    {
+      "id": "rcc6-companion",
+      "hardware": "Heltec RadioCore RCC6",
+      "role": "BLE or Wi-Fi Web/AP companion with NV3001B TFT",
+      "repository": "https://github.com/n30nex/NeonPocketMC-RCC6",
+      "release": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v1.1.0-rc.1",
+      "tag": "v1.1.0-rc.1",
+      "commit": "3de6a8ff564fb07ce799c65250112fd8efeca476",
+      "submodule": "firmware/rcc6-companion",
+      "artifacts": [
+        {"name": "NeonPocketMC-RCC6-1.1-RC1-BLE-app.bin", "size": 1498624, "sha256": "23e2f5404b911c2ed2ddafa235c9a32e7bd4556be864ff65bd4bc8fce536eda6", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-1.1-RC1-BLE-app.bin"},
+        {"name": "NeonPocketMC-RCC6-1.1-RC1-BLE-full-recovery-preserves-meshcore-settings.bin", "size": 1564160, "sha256": "7ccf3272fd6390d204acc03e9930ce643307c17ae7bd9596f1ef5c2bc63a4a14", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-1.1-RC1-BLE-full-recovery-preserves-meshcore-settings.bin"},
+        {"name": "NeonPocketMC-RCC6-1.1-RC1-WebAP-app.bin", "size": 1391120, "sha256": "551f863c8186cb0caf85027170e2673aa6087f60818e920a8c70b3229715c539", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-1.1-RC1-WebAP-app.bin"},
+        {"name": "NeonPocketMC-RCC6-1.1-RC1-WebAP-full-recovery-preserves-meshcore-settings.bin", "size": 1456656, "sha256": "8c9dd0b4c2a16416a05958d919063d68658c706741caf2b2d697ad131475f555", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-1.1-RC1-WebAP-full-recovery-preserves-meshcore-settings.bin"}
+      ]
+    },
+    {
+      "id": "rcc6-mqtt-repeater",
+      "hardware": "Heltec RadioCore RCC6",
+      "role": "MQTT observer/repeater with WebUI",
+      "repository": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater",
+      "release": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.0.0-rc.2",
+      "tag": "v1.0.0-rc.2",
+      "commit": "c2c711c09f2702a595e0bf8b8398e12b76c4838d",
+      "submodule": "firmware/rcc6-mqtt-repeater",
+      "defaults": {"packet_hash_bytes": 3, "mqtt_brokers": ["mqtt1.meshcore.ca", "mqtt2.meshcore.ca"]},
+      "artifacts": [
+        {"name": "NeonPocketMC-RCC6-Repeater-v1.0.0-rc.2-app.bin", "size": 1773216, "sha256": "9fe74f612e7d583bd0702221c677cd8160a649c5b5a373ea372e712180a8a27d", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.0.0-rc.2/NeonPocketMC-RCC6-Repeater-v1.0.0-rc.2-app.bin"},
+        {"name": "NeonPocketMC-RCC6-Repeater-v1.0.0-rc.2-full-recovery-preserves-meshcore-settings.bin", "size": 1838752, "sha256": "fde4f2a18a25da78de9695d85a334a447b02d9bcba37dc1b5d1c111da303f4d5", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.0.0-rc.2/NeonPocketMC-RCC6-Repeater-v1.0.0-rc.2-full-recovery-preserves-meshcore-settings.bin"},
+        {"name": "NeonPocketMC-RCC6-Repeater-v1.0.0-rc.2-configurator.zip", "size": 14268, "sha256": "eb50b2d9412173c383441067423f4d26d45b3c8be50e62ac7ec72278e94407d3", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.0.0-rc.2/NeonPocketMC-RCC6-Repeater-v1.0.0-rc.2-configurator.zip"}
+      ]
+    }
+  ]
+}
