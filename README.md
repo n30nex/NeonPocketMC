@@ -10,6 +10,16 @@ One release catalog for the NeonPocketMC firmware family. This repository pins t
 
 > **Choose by exact hardware and role. There is no universal image. Never flash an RC52 image to RCC6, or an RCC6 image to RC52.** Attach a suitable LoRa antenna before transmitting.
 
+## Demo-scene boot
+
+<p align="center">
+  <img src="docs/images/demoscene/neonpocket-splash.gif" alt="NeonPocketMC animated demo-scene boot sequence" width="660">
+</p>
+
+The TFT builds open with a 3.2-second procedural NeonPocketMC sequence: vector-pocket reveal, mesh nodes, chromatic title glitch, star field, raster beam, specular sweep, staged link status, and a final `MESH READY` lockup. This GIF contains 27 checksum-verified frames captured directly from the RCC6 framebuffer—not a mockup. RC52 companions and TFT Room Servers use the same visual language with role-specific status text.
+
+Capture provenance and checksums are recorded in [`docs/images/demoscene/README.md`](docs/images/demoscene/README.md).
+
 ## Live RCC6 UI
 
 These are direct, pixel-for-pixel captures of the 220×128 framebuffer running on an RCC6—not mockups. They were captured from a temporary diagnostics build based on the exact [`v1.2.0-rc.1`](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v1.2.0-rc.1) source; the capture hook is not included in public firmware.
