@@ -15,6 +15,6 @@ jobs:
       - name: Check out pinned suite source
         uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: true
       - name: Validate catalog and submodule pins
         run: python scripts/verify_catalog.py
