@@ -12,10 +12,14 @@ ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "catalog.json"
 
 
-def git_head(path: Path) -> str:
-    return subprocess.check_output(
-        ["git", "-C", str(path), "rev-parse", "HEAD"], text=True
+def gitlink(path: Path) -> str:
+    relative = path.relative_to(ROOT).as_posix()
+    line = subprocess.check_output(
+        ["git", "-C", str(ROOT), "ls-files", "-s", "--", relative], text=True
     ).strip()
+    mode, commit, stage, indexed_path = line.split(maxsplit=3)
+    assert mode == "160000" and stage == "0" and indexed_path == relative
+    return commit
 
 
 def main() -> None:
@@ -34,7 +38,7 @@ def main() -> None:
         commit = product["commit"]
         assert len(commit) == 40 and all(c in "0123456789abcdef" for c in commit)
         path = ROOT / product["submodule"]
-        actual = git_head(path)
+        actual = gitlink(path)
         assert actual == commit, f"{product_id}: expected {commit}, got {actual}"
 
         assert product["repository"].startswith("https://github.com/")
@@ -47,6 +51,7 @@ def main() -> None:
             assert len(digest) == 64 and all(c in "0123456789abcdef" for c in digest)
             assert artifact["size"] > 0
             assert artifact["url"].startswith(product["repository"] + "/releases/download/")
+            assert artifact["url"].endswith("/" + name)
 
     print(f"Verified {len(products)} products and {len(names)} release artifacts")
 
