@@ -23,7 +23,7 @@ The BLE and Web/AP images are separate firmware modes.
 Normal app-only update:
 
 ```powershell
-python -m esptool --chip esp32c6 --port COM21 write-flash 0x10000 NeonPocketMC-RCC6-1.1-RC1-BLE-app.bin
+python -m esptool --chip esp32c6 --port COM21 write-flash 0x10000 NeonPocketMC-RCC6-1.2-RC2-BLE-app.bin
 ```
 
 Replace `COM21` and the filename as needed. Use the Web/AP app filename for Web mode.
@@ -32,7 +32,7 @@ The Web/AP build starts its saved local 2.4 GHz Wi-Fi configuration when availab
 
 ## RCC6 MQTT observer/repeater
 
-1. Flash `NeonPocketMC-RCC6-Repeater-v1.0.0-rc.2-app.bin` at `0x10000`.
+1. Flash `NeonPocketMC-RCC6-Repeater-v1.1.0-rc.2-app.bin` at `0x10000`.
 2. Keep USB connected.
 3. Extract and run the included configurator package for Windows or Linux.
 4. Set the node name, radio preset or all custom radio values, region/channel configuration, Wi-Fi, MQTT broker, and credentials before deployment.
@@ -41,7 +41,7 @@ The Web/AP build starts its saved local 2.4 GHz Wi-Fi configuration when availab
 
 The firmware also offers a setup WebUI and dashboard. Default broker choices prioritize `mqtt1.meshcore.ca` and `mqtt2.meshcore.ca`; every broker offered by the upstream MQTT observer integration remains available or can be entered manually.
 
-Manual flasher and upstream integration references are maintained in the dedicated [RCC6 repeater release documentation](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.0.0-rc.2).
+Manual flasher and upstream integration references are maintained in the dedicated [RCC6 repeater release documentation](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.1.0-rc.2).
 
 ## RCC6 recovery image
 
