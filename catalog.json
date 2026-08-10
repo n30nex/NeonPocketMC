@@ -1,20 +1,20 @@
 {
   "schema": 1,
-  "suite_version": "1.1.0-rc.1",
+  "suite_version": "1.1.0-rc.2",
   "products": [
     {
       "id": "rc52-companion",
       "hardware": "Heltec RadioCore RC52-L62 with NV3001B TFT",
       "role": "BLE companion with NeonPocket UI",
       "repository": "https://github.com/n30nex/NeonPocketMC-RC52",
-      "release": "https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.1.0-rc.1",
-      "tag": "v1.1.0-rc.1",
-      "commit": "74a1c1f4e1ba8c848534775d37e5ea3c635d2f57",
+      "release": "https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.1.0-rc.2",
+      "tag": "v1.1.0-rc.2",
+      "commit": "d239068185f52dcf1f79a63540d510fb8dfa525c",
       "submodule": "firmware/rc52-companion",
       "profiles": ["ble-companion-tft"],
       "artifacts": [
-        {"name": "NeonPocketMC-RC52-1.1-RC1.hex", "size": 1066568, "sha256": "833ad1c2a750f8cfd8bf90d5210e26b4dc02fafb97f3e806299fd6009c356981", "url": "https://github.com/n30nex/NeonPocketMC-RC52/releases/download/v1.1.0-rc.1/NeonPocketMC-RC52-1.1-RC1.hex"},
-        {"name": "NeonPocketMC-RC52-1.1-RC1.uf2", "size": 758784, "sha256": "b07562c88d62c063752804601724147451986e3ce470f9a545fc621708c6f415", "url": "https://github.com/n30nex/NeonPocketMC-RC52/releases/download/v1.1.0-rc.1/NeonPocketMC-RC52-1.1-RC1.uf2"}
+        {"name": "NeonPocketMC-RC52-1.1-RC2.hex", "size": 1074414, "sha256": "9cd59dc939cd7eb1fb444734d65f470704c6820de498366fcd395f252da73ec7", "url": "https://github.com/n30nex/NeonPocketMC-RC52/releases/download/v1.1.0-rc.2/NeonPocketMC-RC52-1.1-RC2.hex"},
+        {"name": "NeonPocketMC-RC52-1.1-RC2.uf2", "size": 764416, "sha256": "cc7a70953b4446d93ef5ec05df9f796bae8f8dc550f6c37fb2b3920156a68efe", "url": "https://github.com/n30nex/NeonPocketMC-RC52/releases/download/v1.1.0-rc.2/NeonPocketMC-RC52-1.1-RC2.uf2"}
       ]
     },
     {
@@ -22,19 +22,19 @@
       "hardware": "Heltec RadioCore RC52-L62",
       "role": "Low-power repeater or Room Server with optional NV3001B TFT",
       "repository": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater",
-      "release": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.1",
-      "tag": "v1.1.0-rc.1",
-      "commit": "ae51b063e67ac78df7b77a2856f62f6131f527fc",
+      "release": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2",
+      "tag": "v1.1.0-rc.2",
+      "commit": "5d6440ffbc73d8c93e5cac9e00f93aa7a25f2b89",
       "submodule": "firmware/rc52-repeater",
       "profiles": ["repeater-headless", "room-server-headless", "room-server-tft"],
       "artifacts": [
-        {"name": "NeonPocketMC-RC52-Repeater-v1.1.0-rc.1.hex", "size": 930328, "sha256": "682abad75a1c3208c4ba4096655b39b8ffc074bdd78d793c1f72e4280490b9a7", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RC52-Repeater-v1.1.0-rc.1.hex"},
-        {"name": "NeonPocketMC-RC52-Repeater-v1.1.0-rc.1.uf2", "size": 661504, "sha256": "80848239eb07f5c871431952f1a0c0dbf6dd8e0a89cb0cad7213fd3438a9b77d", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RC52-Repeater-v1.1.0-rc.1.uf2"},
-        {"name": "NeonPocketMC-RC52-Room-Server-Configurator-v1.1.0-rc.1.zip", "size": 7870, "sha256": "1eb2c4645516a939cf5e3310ccd2c4971c6bf31f2b0bc59290e4b20914f039c0", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RC52-Room-Server-Configurator-v1.1.0-rc.1.zip"},
-        {"name": "NeonPocketMC-RC52-Room-Server-Headless-v1.1.0-rc.1.hex", "size": 919078, "sha256": "602d279ce2024cd40e895d3daa7d47b46aed94aa8285328890d8328a1e344158", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RC52-Room-Server-Headless-v1.1.0-rc.1.hex"},
-        {"name": "NeonPocketMC-RC52-Room-Server-Headless-v1.1.0-rc.1.uf2", "size": 653824, "sha256": "6c9c154e013f2547a64c476b6cff7f7f7cfe29bdb55b4a6e36db9b1498fb2ac7", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RC52-Room-Server-Headless-v1.1.0-rc.1.uf2"},
-        {"name": "NeonPocketMC-RC52-Room-Server-TFT-v1.1.0-rc.1.hex", "size": 973409, "sha256": "a15e8641dec957c9bad217dea1bc9ede21de198c3358b601b8f9636c3ec3c593", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RC52-Room-Server-TFT-v1.1.0-rc.1.hex"},
-        {"name": "NeonPocketMC-RC52-Room-Server-TFT-v1.1.0-rc.1.uf2", "size": 692224, "sha256": "5f12a445a5c37047db2ce16cb6b958841c0c82d64d978e4733b3f05db1efba0e", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RC52-Room-Server-TFT-v1.1.0-rc.1.uf2"}
+        {"name": "NeonPocketMC-RC52-Repeater-v1.1.0-rc.2.hex", "size": 930508, "sha256": "488cb41905f98db5030045046740a6742ae6d919c5f1468f998256be4351b6fb", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RC52-Repeater-v1.1.0-rc.2.hex"},
+        {"name": "NeonPocketMC-RC52-Repeater-v1.1.0-rc.2.uf2", "size": 662016, "sha256": "253cce4d6019a586e64f68348454e9151c22304ae2bf53f086d7f42092abb54b", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RC52-Repeater-v1.1.0-rc.2.uf2"},
+        {"name": "NeonPocketMC-RC52-Room-Server-Configurator-v1.1.0-rc.2.zip", "size": 8053, "sha256": "0f1d02f3c289d0d92d2fb5ebd262cc525df7c97f7b77378f2b5be445b8d4102c", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RC52-Room-Server-Configurator-v1.1.0-rc.2.zip"},
+        {"name": "NeonPocketMC-RC52-Room-Server-Headless-v1.1.0-rc.2.hex", "size": 919258, "sha256": "1a5fe842c2a47bb3d4914c66c7a5bfd9fb8533ee9ce34ef49218d04e3a2faf66", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RC52-Room-Server-Headless-v1.1.0-rc.2.hex"},
+        {"name": "NeonPocketMC-RC52-Room-Server-Headless-v1.1.0-rc.2.uf2", "size": 653824, "sha256": "74a4ef93e53f6a3a378c08e71cd33aa2b78a154554dd7b304af3f22d3875b439", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RC52-Room-Server-Headless-v1.1.0-rc.2.uf2"},
+        {"name": "NeonPocketMC-RC52-Room-Server-TFT-v1.1.0-rc.2.hex", "size": 977684, "sha256": "0349137977aa699a731f088a22a1b28c0c318748e22226deec1c2cc77a76cdb9", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RC52-Room-Server-TFT-v1.1.0-rc.2.hex"},
+        {"name": "NeonPocketMC-RC52-Room-Server-TFT-v1.1.0-rc.2.uf2", "size": 695296, "sha256": "a67c63cf273fb47159dd1ddfbb893cc3511c628e1277809f64ab353ea00bc1c9", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RC52-Room-Server-TFT-v1.1.0-rc.2.uf2"}
       ]
     },
     {
@@ -42,16 +42,16 @@
       "hardware": "Heltec RadioCore RCC6 with NV3001B TFT",
       "role": "BLE or Wi-Fi Web/AP companion",
       "repository": "https://github.com/n30nex/NeonPocketMC-RCC6",
-      "release": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v1.2.0-rc.1",
-      "tag": "v1.2.0-rc.1",
-      "commit": "502474da06cc362420e6c5358cdf9004df9470ec",
+      "release": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v1.2.0-rc.2",
+      "tag": "v1.2.0-rc.2",
+      "commit": "bbf585e65afb1044d2ed91079f96d3b0e3325279",
       "submodule": "firmware/rcc6-companion",
       "profiles": ["ble-companion-tft", "web-ap-companion-tft"],
       "artifacts": [
-        {"name": "NeonPocketMC-RCC6-1.2-RC1-BLE-app.bin", "size": 1500960, "sha256": "5194092e7ec1db685033ca3f3075361ab9cc371e29d303f234da387c16bec188", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v1.2.0-rc.1/NeonPocketMC-RCC6-1.2-RC1-BLE-app.bin"},
-        {"name": "NeonPocketMC-RCC6-1.2-RC1-BLE-full-recovery-preserves-meshcore-settings.bin", "size": 1566496, "sha256": "72b49fc76113726f0293f05cc0c98b933125afb3e17973923c715a4ee328753d", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v1.2.0-rc.1/NeonPocketMC-RCC6-1.2-RC1-BLE-full-recovery-preserves-meshcore-settings.bin"},
-        {"name": "NeonPocketMC-RCC6-1.2-RC1-WebAP-app.bin", "size": 1393632, "sha256": "26cf945cf21f1fa8bb86904a2ad60ccd983172efb9e5aa9d11b1b46e364bd4cf", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v1.2.0-rc.1/NeonPocketMC-RCC6-1.2-RC1-WebAP-app.bin"},
-        {"name": "NeonPocketMC-RCC6-1.2-RC1-WebAP-full-recovery-preserves-meshcore-settings.bin", "size": 1459168, "sha256": "89b5455e7c5b9e05c3b6e87cd1271d72f6ec509c8788e3f2dcd7dc3a51768bd9", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v1.2.0-rc.1/NeonPocketMC-RCC6-1.2-RC1-WebAP-full-recovery-preserves-meshcore-settings.bin"}
+        {"name": "NeonPocketMC-RCC6-1.2-RC2-BLE-app.bin", "size": 1502992, "sha256": "72af0d1238a4e5dbca4909be312451ca27de6ffb0a8de0a4fa29f288f86e6dc5", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v1.2.0-rc.2/NeonPocketMC-RCC6-1.2-RC2-BLE-app.bin"},
+        {"name": "NeonPocketMC-RCC6-1.2-RC2-BLE-full-recovery-preserves-meshcore-settings.bin", "size": 1568528, "sha256": "ab74477f7b3e07bfced4c587a4878f71c6f6f7fdd75a52051b824dcba3f14f6a", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v1.2.0-rc.2/NeonPocketMC-RCC6-1.2-RC2-BLE-full-recovery-preserves-meshcore-settings.bin"},
+        {"name": "NeonPocketMC-RCC6-1.2-RC2-WebAP-app.bin", "size": 1395648, "sha256": "699bd3789fad068b40317ca0ab8c84588724b4d021bdf3c6e58dfd1a3fe351ac", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v1.2.0-rc.2/NeonPocketMC-RCC6-1.2-RC2-WebAP-app.bin"},
+        {"name": "NeonPocketMC-RCC6-1.2-RC2-WebAP-full-recovery-preserves-meshcore-settings.bin", "size": 1461184, "sha256": "aa2161e7ff2235928e683a002ebaf07c11288af6300e39b2a32b1a7a8f86fd44", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v1.2.0-rc.2/NeonPocketMC-RCC6-1.2-RC2-WebAP-full-recovery-preserves-meshcore-settings.bin"}
       ]
     },
     {
@@ -59,24 +59,24 @@
       "hardware": "Heltec RadioCore RCC6",
       "role": "MQTT observer/repeater or Room Server with optional WebUI and TFT",
       "repository": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater",
-      "release": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.1.0-rc.1",
-      "tag": "v1.1.0-rc.1",
-      "commit": "2efa930eab5dd83b5d58641876f8f04ca7c611b8",
+      "release": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.1.0-rc.2",
+      "tag": "v1.1.0-rc.2",
+      "commit": "7c05e034fef5f6b2351f9c0613177f0a88b59370",
       "submodule": "firmware/rcc6-mqtt-repeater",
       "profiles": ["mqtt-observer-repeater", "room-server-minimal-headless", "room-server-minimal-tft", "room-server-full-headless", "room-server-full-tft-experimental"],
       "defaults": {"packet_hash_bytes": 3, "mqtt_brokers": ["mqtt1.meshcore.ca", "mqtt2.meshcore.ca"]},
       "artifacts": [
-        {"name": "NeonPocketMC-RCC6-Repeater-v1.1.0-rc.1-app.bin", "size": 1773712, "sha256": "ece4344a73ebe51e913130fbd01c766cda0d71e418aef099ab8b38dd2f0daa30", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-Repeater-v1.1.0-rc.1-app.bin"},
-        {"name": "NeonPocketMC-RCC6-Repeater-v1.1.0-rc.1-full-recovery-preserves-meshcore-settings.bin", "size": 1839248, "sha256": "55f927c9df72fa5a570a5e11e87ebdc478eea097c31c70d4a44575e605d8de50", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-Repeater-v1.1.0-rc.1-full-recovery-preserves-meshcore-settings.bin"},
-        {"name": "NeonPocketMC-RCC6-Room-Server-full-headless-v1.1.0-rc.1-app.bin", "size": 1760096, "sha256": "954c5812067f87c301b1b1819859f3a5142248936ef58b0384b3f6c4334f6a8c", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-Room-Server-full-headless-v1.1.0-rc.1-app.bin"},
-        {"name": "NeonPocketMC-RCC6-Room-Server-full-headless-v1.1.0-rc.1-full-recovery-preserves-meshcore-settings.bin", "size": 1825632, "sha256": "e8317213b4f7c76026760e90eabe5e87c45052d28e64e0d91691925ff1b5b6c2", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-Room-Server-full-headless-v1.1.0-rc.1-full-recovery-preserves-meshcore-settings.bin"},
-        {"name": "NeonPocketMC-RCC6-Room-Server-full-tft-v1.1.0-rc.1-app.bin", "size": 1773360, "sha256": "be58701a967a9c76677b1b3ef667b51baa92ba0198f49d5c408ca2c3ba638caa", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-Room-Server-full-tft-v1.1.0-rc.1-app.bin"},
-        {"name": "NeonPocketMC-RCC6-Room-Server-full-tft-v1.1.0-rc.1-full-recovery-preserves-meshcore-settings.bin", "size": 1838896, "sha256": "49afa7a967fa105942fe6c8cb344e94af363c082421427038478bc5c225d5ddb", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-Room-Server-full-tft-v1.1.0-rc.1-full-recovery-preserves-meshcore-settings.bin"},
-        {"name": "NeonPocketMC-RCC6-Room-Server-minimal-headless-v1.1.0-rc.1-app.bin", "size": 558384, "sha256": "de5bce52fc6ee1c29079949fa75eb0487070577008986b8ce5f85034d73fb1b2", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-Room-Server-minimal-headless-v1.1.0-rc.1-app.bin"},
-        {"name": "NeonPocketMC-RCC6-Room-Server-minimal-headless-v1.1.0-rc.1-full-recovery-preserves-meshcore-settings.bin", "size": 623920, "sha256": "dbfe45eea18862da0018a9bba015ae0bb55b10de12680252d7864ae9b2906c57", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-Room-Server-minimal-headless-v1.1.0-rc.1-full-recovery-preserves-meshcore-settings.bin"},
-        {"name": "NeonPocketMC-RCC6-Room-Server-minimal-tft-v1.1.0-rc.1-app.bin", "size": 570240, "sha256": "69fbda88309051459eba75057498b4419bde1af2bcc8fad20affd9ece7230dc6", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-Room-Server-minimal-tft-v1.1.0-rc.1-app.bin"},
-        {"name": "NeonPocketMC-RCC6-Room-Server-minimal-tft-v1.1.0-rc.1-full-recovery-preserves-meshcore-settings.bin", "size": 635776, "sha256": "f3649bcbbea4a9b2a8e922254b0914bb2e98937e92e01639ca124238dfd2e5fc", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-Room-Server-minimal-tft-v1.1.0-rc.1-full-recovery-preserves-meshcore-settings.bin"},
-        {"name": "NeonPocketMC-RCC6-Server-v1.1.0-rc.1-configurator.zip", "size": 17200, "sha256": "ec11a496a991ef2cb1824d92aebdff6e277f22811cba08739805acf42f794415", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.1/NeonPocketMC-RCC6-Server-v1.1.0-rc.1-configurator.zip"}
+        {"name": "NeonPocketMC-RCC6-Repeater-v1.1.0-rc.2-app.bin", "size": 1773760, "sha256": "18c7c7505e214b0f8e0d039e44eeeb563ab2a11a4b19cd666d1dab190d60cfb9", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RCC6-Repeater-v1.1.0-rc.2-app.bin"},
+        {"name": "NeonPocketMC-RCC6-Repeater-v1.1.0-rc.2-full-recovery-preserves-meshcore-settings.bin", "size": 1839296, "sha256": "dd56dbe9ed25a54cecbab76f3a9e7497d34594cd8e6d2632e7d3277f73123c9c", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RCC6-Repeater-v1.1.0-rc.2-full-recovery-preserves-meshcore-settings.bin"},
+        {"name": "NeonPocketMC-RCC6-Room-Server-full-headless-v1.1.0-rc.2-app.bin", "size": 1760144, "sha256": "92cfbb206858e3780a3c158ea9ef3fcc2a6a167f0a42a85bd01dea0f81ef532e", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RCC6-Room-Server-full-headless-v1.1.0-rc.2-app.bin"},
+        {"name": "NeonPocketMC-RCC6-Room-Server-full-headless-v1.1.0-rc.2-full-recovery-preserves-meshcore-settings.bin", "size": 1825680, "sha256": "a6135804781422ab3eb0322796cf977807c050950fad7620537d2cb672049dab", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RCC6-Room-Server-full-headless-v1.1.0-rc.2-full-recovery-preserves-meshcore-settings.bin"},
+        {"name": "NeonPocketMC-RCC6-Room-Server-full-tft-v1.1.0-rc.2-app.bin", "size": 1775552, "sha256": "ace744e0c44751422e643cbfe65b919c6379aa04caa3981d7ad415edfbd8147c", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RCC6-Room-Server-full-tft-v1.1.0-rc.2-app.bin"},
+        {"name": "NeonPocketMC-RCC6-Room-Server-full-tft-v1.1.0-rc.2-full-recovery-preserves-meshcore-settings.bin", "size": 1841088, "sha256": "12fc8ee76d7274140f0f8f449b30dbdad5a27a7d17d608766e053ecde36f06c6", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RCC6-Room-Server-full-tft-v1.1.0-rc.2-full-recovery-preserves-meshcore-settings.bin"},
+        {"name": "NeonPocketMC-RCC6-Room-Server-minimal-headless-v1.1.0-rc.2-app.bin", "size": 558432, "sha256": "4ce5eacb8deab3698807d178a52dcc4b4a0725222bdcc86d42ca081d014f3cab", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RCC6-Room-Server-minimal-headless-v1.1.0-rc.2-app.bin"},
+        {"name": "NeonPocketMC-RCC6-Room-Server-minimal-headless-v1.1.0-rc.2-full-recovery-preserves-meshcore-settings.bin", "size": 623968, "sha256": "1b19f3dd92742578bf7a28001e088b38e40f59897f8ad23fcf3feffe553ef0af", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RCC6-Room-Server-minimal-headless-v1.1.0-rc.2-full-recovery-preserves-meshcore-settings.bin"},
+        {"name": "NeonPocketMC-RCC6-Room-Server-minimal-tft-v1.1.0-rc.2-app.bin", "size": 572304, "sha256": "9775ab56f31c44875095e6df17b7e6a4aab4104037243003e6550cf8be9e10ba", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RCC6-Room-Server-minimal-tft-v1.1.0-rc.2-app.bin"},
+        {"name": "NeonPocketMC-RCC6-Room-Server-minimal-tft-v1.1.0-rc.2-full-recovery-preserves-meshcore-settings.bin", "size": 637840, "sha256": "f60791b94a9bd09ad09ea6eb3db0af7d2dba100bf706f8b801f39eb619524a8d", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RCC6-Room-Server-minimal-tft-v1.1.0-rc.2-full-recovery-preserves-meshcore-settings.bin"},
+        {"name": "NeonPocketMC-RCC6-Server-v1.1.0-rc.2-configurator.zip", "size": 17356, "sha256": "9563b47aa2bf0bcfc8cc0d40b34e226180dbf170695cf8ee526f227bde2d8a02", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.1.0-rc.2/NeonPocketMC-RCC6-Server-v1.1.0-rc.2-configurator.zip"}
       ]
     }
   ]

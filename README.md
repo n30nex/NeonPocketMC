@@ -46,15 +46,17 @@ Capture provenance and checksums are recorded in [`docs/images/rcc6-ui/README.md
 
 ## Current builds
 
+All RC2 builds below use MeshCore 1.17.0 plus the exact upstream boosted-RX-gain reset fix from [MeshCore PR #3158](https://github.com/meshcore-dev/MeshCore/pull/3158). Upstream has not published a 1.17.1 tag, so the suite does not claim that version.
+
 | Hardware | Role | Current release | Normal install |
 |---|---|---|---|
-| RC52-L62 + NV3001B TFT | BLE companion with NeonPocket UI | [v1.1.0-rc.1](https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.1.0-rc.1) | Copy the companion `.uf2` to the RC52 bootloader drive |
-| RC52-L62 | Headless low-power repeater | [v1.1.0-rc.1](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.1) | Copy the repeater `.uf2` to the RC52 bootloader drive |
-| RC52-L62 | Headless Room Server | [v1.1.0-rc.1](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.1) | Copy the headless Room Server `.uf2` |
-| RC52-L62 + NV3001B TFT | Room Server with local dashboard | [v1.1.0-rc.1](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.1) | Copy the TFT Room Server `.uf2` |
-| RCC6 + NV3001B TFT | BLE companion or Wi-Fi Web/AP companion | [v1.2.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v1.2.0-rc.1) | Flash the selected app `.bin` at `0x10000` |
-| RCC6 | MQTT observer/repeater with setup WebUI | [v1.1.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.1.0-rc.1) | Flash the repeater app at `0x10000`, then run the configurator |
-| RCC6, TFT optional | Minimal or full Room Server | [v1.1.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.1.0-rc.1) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
+| RC52-L62 + NV3001B TFT | BLE companion with NeonPocket UI | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.1.0-rc.2) | Copy the companion `.uf2` to the RC52 bootloader drive |
+| RC52-L62 | Headless low-power repeater | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the repeater `.uf2` to the RC52 bootloader drive |
+| RC52-L62 | Headless Room Server | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the headless Room Server `.uf2` |
+| RC52-L62 + NV3001B TFT | Room Server with local dashboard | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the TFT Room Server `.uf2` |
+| RCC6 + NV3001B TFT | BLE companion or Wi-Fi Web/AP companion | [v1.2.0-rc.2](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v1.2.0-rc.2) | Flash the selected app `.bin` at `0x10000` |
+| RCC6 | MQTT observer/repeater with setup WebUI | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.1.0-rc.2) | Flash the repeater app at `0x10000`, then run the configurator |
+| RCC6, TFT optional | Minimal or full Room Server | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.1.0-rc.2) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
 
 The RCC6 MQTT observer/repeater defaults to **3-byte packet hash mode**. Its WebUI and Windows/Linux configurator cover node name, radio preset and custom radio values, Wi-Fi, MQTT broker selection, and post-setup IP discovery. The preferred public brokers are `mqtt1.meshcore.ca` and `mqtt2.meshcore.ca`; the other upstream-compatible brokers remain selectable/configurable.
 
