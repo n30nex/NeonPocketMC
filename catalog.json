@@ -1,7 +1,37 @@
 {
   "schema": 1,
-  "suite_version": "1.1.0-rc.2",
+  "suite_version": "1.2.0-rc.1",
   "products": [
+    {
+      "id": "heltec-v3-companion",
+      "hardware": "Heltec WiFi LoRa 32 V3 with integrated 128x64 OLED",
+      "role": "BLE companion with NeonPocket OLED UI",
+      "repository": "https://github.com/n30nex/NeonPocketMC-Heltec-V3",
+      "release": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v1.0.0-rc.1",
+      "tag": "v1.0.0-rc.1",
+      "commit": "6efc9a9fca607397af44b9710900067cfb693674",
+      "submodule": "firmware/heltec-v3-companion",
+      "profiles": ["ble-companion-oled"],
+      "artifacts": [
+        {"name": "NeonPocketMC-Heltec-V3-BLE-app.bin", "size": 1272272, "sha256": "6032ece07a46c438bcf618aa960bafe68c28eaac58e331d5f57626a9446cd46b", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v1.0.0-rc.1/NeonPocketMC-Heltec-V3-BLE-app.bin"},
+        {"name": "NeonPocketMC-Heltec-V3-BLE-recovery-preserves-settings.bin", "size": 1337808, "sha256": "9e8517b565669fc083ede0dc445284a169960ffc4cf9fb766d9dffdc32f5d153", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v1.0.0-rc.1/NeonPocketMC-Heltec-V3-BLE-recovery-preserves-settings.bin"}
+      ]
+    },
+    {
+      "id": "heltec-v4-companion",
+      "hardware": "Heltec WiFi LoRa 32 V4/V4.3 with integrated 128x64 OLED",
+      "role": "BLE companion with NeonPocket OLED UI",
+      "repository": "https://github.com/n30nex/NeonPocketMC-Heltec-V4",
+      "release": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v1.0.0-rc.1",
+      "tag": "v1.0.0-rc.1",
+      "commit": "259d6347f1a6002f56c8db8e912bd88e874cfb22",
+      "submodule": "firmware/heltec-v4-companion",
+      "profiles": ["ble-companion-oled"],
+      "artifacts": [
+        {"name": "NeonPocketMC-Heltec-V4-BLE-app.bin", "size": 1269968, "sha256": "81f70ab60b43fb04add7c0de702a17c8899c48b7c9c77ba60ce94f19a19d36cf", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v1.0.0-rc.1/NeonPocketMC-Heltec-V4-BLE-app.bin"},
+        {"name": "NeonPocketMC-Heltec-V4-BLE-recovery-preserves-settings.bin", "size": 1335504, "sha256": "a367ed3d6272478f5f4a6162013562ee37b26d9f29f25b93159f7cbf3291b11a", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v1.0.0-rc.1/NeonPocketMC-Heltec-V4-BLE-recovery-preserves-settings.bin"}
+      ]
+    },
     {
       "id": "rc52-companion",
       "hardware": "Heltec RadioCore RC52-L62 with NV3001B TFT",

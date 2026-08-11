@@ -2,7 +2,7 @@
 
 ## Before you start
 
-1. Identify the board: **RC52** is nRF52840; **RCC6** is ESP32-C6.
+1. Identify the board exactly: **RC52** is nRF52840, **RCC6** is ESP32-C6, and Heltec **V3/V4** are distinct ESP32-S3 boards.
 2. Choose the role: companion, repeater, or MQTT observer/repeater.
 3. Attach the LoRa antenna before any transmit test.
 4. Verify the downloaded SHA-256 value against `SHA256SUMS.txt`.
@@ -15,6 +15,16 @@
 4. Wait for the drive to disappear and the board to reboot.
 
 Use the `.hex` only for advanced recovery/programmer workflows. Normal UF2 installation must not erase or replace the bootloader/SoftDevice.
+
+## Heltec WiFi LoRa 32 V3 or V4 companion
+
+V3 and V4 images are not interchangeable. Download the app image from the exact board repository, then write it at `0x10000`:
+
+```powershell
+python -m esptool --chip esp32s3 --port COMx write-flash 0x10000 <matching-app-image.bin>
+```
+
+Do not erase the whole flash for a normal update. A full backup can contain private identity keys and must never be published. Use a recovery image at `0x0` only when the owning release explicitly calls for bootloader or partition recovery.
 
 ## RCC6 companion
 

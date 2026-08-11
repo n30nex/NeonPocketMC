@@ -8,7 +8,7 @@
 
 One release catalog for the NeonPocketMC firmware family. This repository pins the exact released source for every supported RadioCore build and links to each product-owned download.
 
-> **Choose by exact hardware and role. There is no universal image. Never flash an RC52 image to RCC6, or an RCC6 image to RC52.** Attach a suitable LoRa antenna before transmitting.
+> **Choose by exact hardware and role. There is no universal image. Never cross-flash RC52, RCC6, Heltec V3, or Heltec V4 firmware.** Attach a suitable LoRa antenna before transmitting.
 
 ## Demo-scene boot
 
@@ -44,12 +44,56 @@ These are direct, pixel-for-pixel captures of the 220×128 framebuffer running o
 
 Capture provenance and checksums are recorded in [`docs/images/rcc6-ui/README.md`](docs/images/rcc6-ui/README.md).
 
+## Live Heltec OLED UI
+
+These frames were captured from the OLED framebuffer running on the physical Heltec V3 qualification unit. The Heltec V4 uses the same compact NeonPocket interaction model with its own board and radio-power implementation.
+
+<p align="center">
+  <img src="docs/images/heltec-v3/neonpocket-v3-splash-on-device.gif" alt="NeonPocketMC demo-scene boot captured from the Heltec V3 OLED" width="512">
+</p>
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/heltec-v3/neonpocket-v3-home.png" alt="Heltec V3 NeonPocket Home" width="360"><br><strong>Home</strong></td>
+    <td align="center"><img src="docs/images/heltec-v3/neonpocket-v3-bluetooth.png" alt="Heltec V3 NeonPocket Bluetooth" width="360"><br><strong>Bluetooth</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/heltec-v3/neonpocket-v3-advert.png" alt="Heltec V3 NeonPocket Advert" width="360"><br><strong>Advert</strong></td>
+    <td align="center"><img src="docs/images/heltec-v3/neonpocket-v3-power.png" alt="Heltec V3 NeonPocket Power" width="360"><br><strong>Power</strong></td>
+  </tr>
+</table>
+
+### Heltec V4/V4.3
+
+<p align="center">
+  <img src="docs/images/heltec-v4/neonpocket-v4-splash-on-device.gif" alt="NeonPocketMC demo-scene boot captured from the Heltec V4 OLED" width="512">
+</p>
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/heltec-v4/neonpocket-v4-home.png" alt="Heltec V4 NeonPocket Home" width="360"><br><strong>Home</strong></td>
+    <td align="center"><img src="docs/images/heltec-v4/neonpocket-v4-nearby.png" alt="Heltec V4 NeonPocket Nearby" width="360"><br><strong>Nearby</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/heltec-v4/neonpocket-v4-radio.png" alt="Heltec V4 NeonPocket Radio" width="360"><br><strong>Radio</strong></td>
+    <td align="center"><img src="docs/images/heltec-v4/neonpocket-v4-bluetooth.png" alt="Heltec V4 NeonPocket Bluetooth" width="360"><br><strong>Bluetooth</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/heltec-v4/neonpocket-v4-advert.png" alt="Heltec V4 NeonPocket Advert" width="360"><br><strong>Advert</strong></td>
+    <td align="center"><img src="docs/images/heltec-v4/neonpocket-v4-power.png" alt="Heltec V4 NeonPocket Power" width="360"><br><strong>Power</strong></td>
+  </tr>
+</table>
+
+Capture provenance and checksums are recorded with each device gallery under [`docs/images`](docs/images).
+
 ## Current builds
 
-All RC2 builds below use MeshCore 1.17.0 plus the exact upstream boosted-RX-gain reset fix from [MeshCore PR #3158](https://github.com/meshcore-dev/MeshCore/pull/3158). Upstream has not published a 1.17.1 tag, so the suite does not claim that version.
+Each product release is pinned to an exact source commit and artifact checksum in [`catalog.json`](catalog.json). Board-specific bootloaders, partitions, displays, and radio power paths remain separate.
 
 | Hardware | Role | Current release | Normal install |
 |---|---|---|---|
+| Heltec WiFi LoRa 32 V3 + OLED | BLE companion with NeonPocket UI | [v1.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v1.0.0-rc.1) | Flash the app `.bin` at `0x10000` |
+| Heltec WiFi LoRa 32 V4 + OLED | BLE companion with NeonPocket UI | v1.0.0-rc.1 | Flash the app `.bin` at `0x10000` |
 | RC52-L62 + NV3001B TFT | BLE companion with NeonPocket UI | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.1.0-rc.2) | Copy the companion `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless low-power repeater | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the repeater `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless Room Server | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the headless Room Server `.uf2` |
@@ -64,14 +108,16 @@ The RCC6 MQTT observer/repeater defaults to **3-byte packet hash mode**. Its Web
 
 Use the newest [NeonPocketMC suite release](https://github.com/n30nex/NeonPocketMC/releases) as the index. It carries the machine-readable catalog and checksum for the catalog; the product repositories above remain the single owners of their firmware binaries and setup packages.
 
-Exact install filenames, sizes, SHA-256 values, release links, and source commits for all 24 installable files are recorded in [`catalog.json`](catalog.json).
+Exact install filenames, sizes, SHA-256 values, release links, and source commits for all 28 installable files are recorded in [`catalog.json`](catalog.json).
 
 ## Source layout
 
-The four firmware histories intentionally remain separate because they target different chips, bootloaders, transports, and deployment roles. This repository indexes them as pinned Git submodules:
+The six firmware histories intentionally remain separate because they target different chips, bootloaders, transports, displays, and deployment roles. This repository indexes them as pinned Git submodules:
 
 ```text
 firmware/
+  heltec-v3-companion/
+  heltec-v4-companion/
   rc52-companion/
   rc52-repeater/
   rcc6-companion/
@@ -93,6 +139,7 @@ git submodule update --init --recursive
 ## Important hardware notes
 
 - **RC52:** use the UF2 bootloader path for normal installs. Do not replace the SoftDevice or bootloader.
+- **Heltec V3/V4:** use the matching app image at `0x10000` for normal updates. Do not erase the whole flash; full-chip backups can contain private MeshCore identity material.
 - **RCC6:** use the app image at `0x10000` for normal updates. Use a merged recovery image at `0x0` only when bootloader/partition recovery is required. Do not erase the whole flash.
 - RCC6 merged recovery images stop well before SPIFFS and preserve MeshCore identity, contacts, channels, and preferences; they reset NVS-backed BLE bonds and saved Wi-Fi.
 - The RC52 and RCC6 boards do **not** contain an MPPT controller suitable for an unregulated solar panel. Outdoor solar installs need an external regulator/charger matched to the panel and protected 1-cell battery.

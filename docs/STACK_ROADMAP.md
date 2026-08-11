@@ -1,6 +1,6 @@
 # NeonPocketMC stack roadmap
 
-Suite `v1.1.0-rc.2` carries the first Room Server matrix, shared branding, animated companion startup, RCC6 Quick Reply, and the exact upstream boosted-RX-gain reset fix while preserving separate firmware images for different chips, radios, and runtime costs. There is no universal image.
+Suite `v1.2.0-rc.1` adds board-correct Heltec V3 and V4 BLE/OLED companions to the existing RC52 and RCC6 matrix while preserving separate firmware images for different chips, radios, displays, and runtime costs. There is no universal image.
 
 ## Released Room Server builds
 

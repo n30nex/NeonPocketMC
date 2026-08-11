@@ -10,3 +10,9 @@
 [submodule "firmware/rcc6-mqtt-repeater"]
 	path = firmware/rcc6-mqtt-repeater
 	url = https://github.com/n30nex/NeonPocketMC-RCC6-Repeater.git
+[submodule "firmware/heltec-v3-companion"]
+	path = firmware/heltec-v3-companion
+	url = https://github.com/n30nex/NeonPocketMC-Heltec-V3.git
+[submodule "firmware/heltec-v4-companion"]
+	path = firmware/heltec-v4-companion
+	url = https://github.com/n30nex/NeonPocketMC-Heltec-V4.git

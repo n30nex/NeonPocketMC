@@ -26,7 +26,7 @@ def main() -> None:
     data = json.loads(CATALOG.read_text(encoding="utf-8"))
     assert data["schema"] == 1
     products = data["products"]
-    assert len(products) == 4
+    assert len(products) == 6
     ids: set[str] = set()
     names: set[str] = set()
 
