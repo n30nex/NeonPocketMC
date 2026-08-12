@@ -16,6 +16,8 @@
 
 Use the `.hex` only for advanced recovery/programmer workflows. Normal UF2 installation must not erase or replace the bootloader/SoftDevice.
 
+The companion release offers separate BLE and native-USB UF2 files. USB mode carries the standard binary MeshCore companion protocol; it is not the text configuration CLI.
+
 ## Heltec WiFi LoRa 32 V3 or V4 companion
 
 V3 and V4 images are not interchangeable. Download the app image from the exact board repository, then write it at `0x10000`:
@@ -26,14 +28,16 @@ python -m esptool --chip esp32s3 --port COMx write-flash 0x10000 <matching-app-i
 
 Do not erase the whole flash for a normal update. A full backup can contain private identity keys and must never be published. Use a recovery image at `0x0` only when the owning release explicitly calls for bootloader or partition recovery.
 
+Each companion release offers separate BLE and native-USB app images. USB mode carries the standard binary MeshCore companion protocol; it is not the text configuration CLI.
+
 ## RCC6 Ultimate companion
 
-The BLE and Web/AP images are separate firmware modes.
+The BLE, native-USB, and Web/AP images are separate firmware modes. Native USB carries the standard binary MeshCore companion protocol and is not the text configuration CLI.
 
 Normal app-only update:
 
 ```powershell
-python -m esptool --chip esp32c6 --port COM21 write-flash 0x10000 NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.1-BLE-app.bin
+python -m esptool --chip esp32c6 --port COM21 write-flash 0x10000 NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.3-BLE-app.bin
 ```
 
 Replace `COM21` and the filename as needed. Use the Web/AP app filename for Web mode.
