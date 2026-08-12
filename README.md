@@ -44,6 +44,23 @@ These are direct, pixel-for-pixel captures of the 220×128 framebuffer running o
 
 Capture provenance and checksums are recorded in [`docs/images/rcc6-ui/README.md`](docs/images/rcc6-ui/README.md).
 
+## RCC6 Ultimate service dashboards
+
+The Ultimate Observer and full Room Server share a responsive local dashboard for field status, radio health, MQTT visibility, and recently heard mesh activity. These are real browser captures from the released RCC6 server firmware, not design mockups.
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/rcc6-server/observer-overview-live.png" alt="RCC6 Ultimate Observer overview dashboard" width="440"><br><strong>Live overview</strong></td>
+    <td align="center"><img src="docs/images/rcc6-server/observer-radio-live.png" alt="RCC6 Ultimate Observer radio metrics" width="440"><br><strong>Radio metrics</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/rcc6-server/observer-mqtt-live.png" alt="RCC6 Ultimate Observer MQTT dashboard" width="440"><br><strong>MQTT status</strong></td>
+    <td align="center"><img src="docs/images/rcc6-server/observer-map-live.png" alt="RCC6 Ultimate Observer recently heard mesh map" width="440"><br><strong>Recently heard mesh</strong></td>
+  </tr>
+</table>
+
+Capture provenance and checksums are recorded in [`docs/images/rcc6-server/README.md`](docs/images/rcc6-server/README.md).
+
 ## Live Heltec OLED UI
 
 These frames were captured from the OLED framebuffer running on the physical Heltec V3 qualification unit. The Heltec V4 uses the same compact NeonPocket interaction model with its own board and radio-power implementation.
@@ -92,15 +109,15 @@ Each product release is pinned to an exact source commit and artifact checksum i
 
 | Hardware | Role | Current release | Normal install |
 |---|---|---|---|
-| Heltec WiFi LoRa 32 V3 + OLED | BLE companion with NeonPocket UI | [v1.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v1.0.0-rc.1) | Flash the app `.bin` at `0x10000` |
-| Heltec WiFi LoRa 32 V4 + OLED | BLE companion with NeonPocket UI | v1.0.0-rc.1 | Flash the app `.bin` at `0x10000` |
-| RC52-L62 + NV3001B TFT | BLE companion with NeonPocket UI | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.1.0-rc.2) | Copy the companion `.uf2` to the RC52 bootloader drive |
+| Heltec WiFi LoRa 32 V3 + OLED | BLE companion with NeonPocket UI | [v1.0.0-rc.2](https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v1.0.0-rc.2) | Flash the app `.bin` at `0x10000` |
+| Heltec WiFi LoRa 32 V4 + OLED | BLE companion with NeonPocket UI | [v1.0.0-rc.2](https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v1.0.0-rc.2) | Flash the app `.bin` at `0x10000` |
+| RC52-L62 + NV3001B TFT | BLE companion with NeonPocket UI | [v1.1.0-rc.3](https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.1.0-rc.3) | Copy the companion `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless low-power repeater | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the repeater `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless Room Server | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the headless Room Server `.uf2` |
 | RC52-L62 + NV3001B TFT | Room Server with local dashboard | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the TFT Room Server `.uf2` |
-| RCC6 + NV3001B TFT | BLE companion or Wi-Fi Web/AP companion | [v1.2.0-rc.2](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v1.2.0-rc.2) | Flash the selected app `.bin` at `0x10000` |
-| RCC6 | MQTT observer/repeater with setup WebUI | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.1.0-rc.2) | Flash the repeater app at `0x10000`, then run the configurator |
-| RCC6, TFT optional | Minimal or full Room Server | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.1.0-rc.2) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
+| RCC6 + NV3001B TFT | Ultimate BLE companion or Wi-Fi Web companion | [v2.2.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.2.0-rc.1) | Flash the selected app `.bin` at `0x10000` |
+| RCC6 | Ultimate MQTT observer/repeater with setup WebUI | [v1.2.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.2.0-rc.1) | Flash the observer app at `0x10000`, then run the configurator |
+| RCC6, TFT optional | Ultimate minimal or full Room Server | [v1.2.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.2.0-rc.1) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
 
 The RCC6 MQTT observer/repeater defaults to **3-byte packet hash mode**. Its WebUI and Windows/Linux configurator cover node name, radio preset and custom radio values, Wi-Fi, MQTT broker selection, and post-setup IP discovery. The preferred public brokers are `mqtt1.meshcore.ca` and `mqtt2.meshcore.ca`; the other upstream-compatible brokers remain selectable/configurable.
 
@@ -108,7 +125,7 @@ The RCC6 MQTT observer/repeater defaults to **3-byte packet hash mode**. Its Web
 
 Use the newest [NeonPocketMC suite release](https://github.com/n30nex/NeonPocketMC/releases) as the index. It carries the machine-readable catalog and checksum for the catalog; the product repositories above remain the single owners of their firmware binaries and setup packages.
 
-Exact install filenames, sizes, SHA-256 values, release links, and source commits for all 28 installable files are recorded in [`catalog.json`](catalog.json).
+Exact install filenames, sizes, SHA-256 values, release links, and source commits for every installable file are recorded in [`catalog.json`](catalog.json).
 
 ## Source layout
 

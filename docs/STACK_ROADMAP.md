@@ -1,6 +1,6 @@
 # NeonPocketMC stack roadmap
 
-Suite `v1.2.0-rc.1` adds board-correct Heltec V3 and V4 BLE/OLED companions to the existing RC52 and RCC6 matrix while preserving separate firmware images for different chips, radios, displays, and runtime costs. There is no universal image.
+Suite `v1.3.0-rc.1` pins the Ultimate RCC6 companion and service releases plus the universal triple-press Home shortcut for RC52, Heltec V3, and Heltec V4 companions. Separate firmware images remain mandatory for different chips, radios, displays, and runtime costs. There is no universal image.
 
 ## Released Room Server builds
 
@@ -43,13 +43,11 @@ Room Server TFT builds instead prioritize room identity, clients, posts, RF stat
 
 ## One-button messages
 
-The RCC6 companion now ships six fixed quick replies—`OK`, `YES`, `NO`, `ON MY WAY`, `NEED HELP`, and `73`—with an 800 ms automatic highlight and a separate send confirmation. This is fast, predictable, and inexpensive.
-
-Full text entry follows as an optional alphabetic row/column scanner with `SPACE`, `BACKSPACE`, `SEND`, and `CANCEL`. It uses a fixed 160-byte buffer and no dictionary. T9, radial keyboards, continuously animated clocks, and gesture-heavy input are intentionally excluded because they add ambiguity or exceed the RCC6 display-transfer budget.
+The Ultimate RCC6 companion ships eight editable quick phrases, recent direct/channel target selection, and an optional one-switch row/character scanner with selectable cadence, case, punctuation, space, backspace, cancel, and explicit send confirmation. Input stays bounded to 140 UTF-8 bytes and uses the same single/double-press contract as the rest of the UI.
 
 ## Animated boot
 
-RC52 and RCC6 companion builds draw the NeonPocket mark from native display primitives and animate the startup sequence. A fatal radio or storage state replaces the animation with a stable explanation instead of a silent halt or boot-loop-looking screen. Extending the same staged animation to every TFT service profile remains follow-up work.
+RC52 and RCC6 companion builds and TFT Room Server profiles draw the NeonPocket mark from native display primitives and animate the startup sequence. A fatal radio or storage state replaces the animation with a stable explanation instead of a silent halt or boot-loop-looking screen.
 
 ## Release gates
 

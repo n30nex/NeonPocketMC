@@ -26,23 +26,25 @@ python -m esptool --chip esp32s3 --port COMx write-flash 0x10000 <matching-app-i
 
 Do not erase the whole flash for a normal update. A full backup can contain private identity keys and must never be published. Use a recovery image at `0x0` only when the owning release explicitly calls for bootloader or partition recovery.
 
-## RCC6 companion
+## RCC6 Ultimate companion
 
 The BLE and Web/AP images are separate firmware modes.
 
 Normal app-only update:
 
 ```powershell
-python -m esptool --chip esp32c6 --port COM21 write-flash 0x10000 NeonPocketMC-RCC6-1.2-RC2-BLE-app.bin
+python -m esptool --chip esp32c6 --port COM21 write-flash 0x10000 NeonPocketMC-RCC6-Ultimate-v2.2.0-rc.1-BLE-app.bin
 ```
 
 Replace `COM21` and the filename as needed. Use the Web/AP app filename for Web mode.
 
-The Web/AP build starts its saved local 2.4 GHz Wi-Fi configuration when available. Otherwise it exposes its setup AP; the TFT shows the SSID, key, and address. The local WebUI uses HTTP authentication in station mode. TCP/5000 is for trusted private LANs and exposes the full MeshCore companion/admin protocol.
+The Web build starts its saved local 2.4 GHz Wi-Fi configuration when available. Otherwise it exposes its setup AP; the TFT shows the SSID, key, and address. The local WebUI uses HTTP authentication in station mode. TCP/5000 is for trusted private LANs and exposes the full MeshCore companion/admin protocol.
+
+Optional battery commands in USB CLI Rescue are `set.batterysize <mAh>` (alias `np battery size <mAh>`) and `np battery offset <mV>`. Capacity is a runtime estimate; the voltage offset must be based on a multimeter comparison.
 
 ## RCC6 MQTT observer/repeater
 
-1. Flash `NeonPocketMC-RCC6-Repeater-v1.1.0-rc.2-app.bin` at `0x10000`.
+1. Flash `NeonPocketMC-RCC6-Ultimate-Observer-v1.2.0-rc.1-app.bin` at `0x10000`.
 2. Keep USB connected.
 3. Extract and run the included configurator package for Windows or Linux.
 4. Set the node name, radio preset or all custom radio values, region/channel configuration, Wi-Fi, MQTT broker, and credentials before deployment.
@@ -51,7 +53,7 @@ The Web/AP build starts its saved local 2.4 GHz Wi-Fi configuration when availab
 
 The firmware also offers a setup WebUI and dashboard. Default broker choices prioritize `mqtt1.meshcore.ca` and `mqtt2.meshcore.ca`; every broker offered by the upstream MQTT observer integration remains available or can be entered manually.
 
-Manual flasher and upstream integration references are maintained in the dedicated [RCC6 repeater release documentation](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.1.0-rc.2).
+Manual flasher and upstream integration references are maintained in the dedicated [RCC6 server release documentation](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.2.0-rc.1).
 
 ## RCC6 recovery image
 
