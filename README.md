@@ -20,7 +20,32 @@ The TFT builds open with a 3.2-second procedural NeonPocketMC sequence: vector-p
 
 Capture provenance and checksums are recorded in [`docs/images/demoscene/README.md`](docs/images/demoscene/README.md).
 
-## Live RCC6 UI
+## RCC6 Ultimate companion UI
+
+Ultimate keeps the radio useful without a phone: unread-first Home, complete paged messages, recent-node context, live radio health, device tools, and the one-button composer. These are direct 220×128 framebuffer captures from the connected RCC6 production renderer—not browser mockups.
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/rcc6-ultimate/rcc6-ultimate-home.png" alt="RCC6 Ultimate unread-first Home" width="440"><br><strong>Home</strong></td>
+    <td align="center"><img src="docs/images/rcc6-ultimate/rcc6-ultimate-inbox.png" alt="RCC6 Ultimate paged Inbox" width="440"><br><strong>Inbox</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/rcc6-ultimate/rcc6-ultimate-network.png" alt="RCC6 Ultimate Network Explorer" width="440"><br><strong>Network Explorer</strong></td>
+    <td align="center"><img src="docs/images/rcc6-ultimate/rcc6-ultimate-radio.png" alt="RCC6 Ultimate Radio analytics" width="440"><br><strong>Radio analytics</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/rcc6-ultimate/rcc6-ultimate-tools.png" alt="RCC6 Ultimate Tools" width="440"><br><strong>Tools</strong></td>
+    <td align="center"><img src="docs/images/rcc6-ultimate/rcc6-ultimate-power.png" alt="RCC6 Ultimate Power confirmation" width="440"><br><strong>Power</strong></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/images/rcc6-ultimate/rcc6-ultimate-composer-targets.png" alt="RCC6 Ultimate one-button target picker" width="440"><br><strong>Target picker</strong></td>
+    <td align="center"><img src="docs/images/rcc6-ultimate/rcc6-ultimate-composer-phrases.png" alt="RCC6 Ultimate one-button phrase composer" width="440"><br><strong>Quick composer</strong></td>
+  </tr>
+</table>
+
+Capture provenance is recorded in [`docs/images/rcc6-ultimate/README.md`](docs/images/rcc6-ultimate/README.md).
+
+## RCC6 classic UI
 
 These are direct, pixel-for-pixel captures of the 220×128 framebuffer running on an RCC6—not mockups. They were captured from a temporary diagnostics build based on the exact [`v1.2.0-rc.1`](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v1.2.0-rc.1) source; the capture hook is not included in public firmware.
 
@@ -115,11 +140,11 @@ Each product release is pinned to an exact source commit and artifact checksum i
 | RC52-L62 | Headless low-power repeater | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the repeater `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless Room Server | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the headless Room Server `.uf2` |
 | RC52-L62 + NV3001B TFT | Room Server with local dashboard | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the TFT Room Server `.uf2` |
-| RCC6 + NV3001B TFT | Ultimate BLE companion or Wi-Fi Web companion | [v2.2.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.2.0-rc.1) | Flash the selected app `.bin` at `0x10000` |
-| RCC6 | Ultimate MQTT observer/repeater with setup WebUI | [v1.2.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.2.0-rc.1) | Flash the observer app at `0x10000`, then run the configurator |
-| RCC6, TFT optional | Ultimate minimal or full Room Server | [v1.2.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.2.0-rc.1) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
+| RCC6 + NV3001B TFT | Ultimate BLE companion or Wi-Fi Web companion | [v2.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.3.0-rc.1) | Flash the selected app `.bin` at `0x10000` |
+| RCC6 | Ultimate MQTT observer/repeater with setup WebUI | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Flash the observer app at `0x10000`, then run the configurator |
+| RCC6, TFT optional | Ultimate minimal or full Room Server | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
 
-The RCC6 MQTT observer/repeater defaults to **3-byte packet hash mode**. Its WebUI and Windows/Linux configurator cover node name, radio preset and custom radio values, Wi-Fi, MQTT broker selection, and post-setup IP discovery. The preferred public brokers are `mqtt1.meshcore.ca` and `mqtt2.meshcore.ca`; the other upstream-compatible brokers remain selectable/configurable.
+The RCC6 Web companion and networked service builds now use human-first dashboards with traffic bars, delivery and signal analytics, nearby-radio freshness, and coordinate-backed maps that never invent node locations. The MQTT observer/repeater defaults to **3-byte packet hash mode**. Its Windows/Linux configurator covers node name, radio preset and custom radio values, Wi-Fi, MQTT broker selection, and post-setup IP discovery. The preferred public brokers are `mqtt1.meshcore.ca` and `mqtt2.meshcore.ca`; the other upstream-compatible brokers remain selectable/configurable.
 
 ## Download the suite
 
