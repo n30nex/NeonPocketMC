@@ -140,7 +140,7 @@ Each product release is pinned to an exact source commit and artifact checksum i
 | RC52-L62 | Headless low-power repeater | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the repeater `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless Room Server | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the headless Room Server `.uf2` |
 | RC52-L62 + NV3001B TFT | Room Server with local dashboard | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the TFT Room Server `.uf2` |
-| RCC6 + NV3001B TFT | Ultimate BLE companion or Wi-Fi Web companion | [v2.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.3.0-rc.1) | Flash the selected app `.bin` at `0x10000` |
+| RCC6 + NV3001B TFT | Ultimate BLE companion or Wi-Fi Web companion | [v2.3.0-rc.2](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.3.0-rc.2) | Flash the selected app `.bin` at `0x10000` |
 | RCC6 | Ultimate MQTT observer/repeater with setup WebUI | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Flash the observer app at `0x10000`, then run the configurator |
 | RCC6, TFT optional | Ultimate minimal or full Room Server | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
 

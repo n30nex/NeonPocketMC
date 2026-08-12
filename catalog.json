@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "suite_version": "1.4.0-rc.1",
+  "suite_version": "1.4.0-rc.2",
   "products": [
     {
       "id": "heltec-v3-companion",
@@ -72,17 +72,17 @@
       "hardware": "Heltec RadioCore RCC6 with NV3001B TFT",
       "role": "Ultimate BLE or Wi-Fi Web companion",
       "repository": "https://github.com/n30nex/NeonPocketMC-RCC6",
-      "release": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.3.0-rc.1",
-      "tag": "v2.3.0-rc.1",
-      "commit": "9a37abb1791f1de3408e75ef22509d4068abb15e",
+      "release": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.3.0-rc.2",
+      "tag": "v2.3.0-rc.2",
+      "commit": "213075b7db894dfcd5c4132b92b49d20b4eaacfd",
       "submodule": "firmware/rcc6-companion",
       "profiles": ["ble-companion-tft", "web-ap-companion-tft"],
       "artifacts": [
-        {"name": "NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.1-BLE-app.bin", "size": 1564304, "sha256": "789c98ef5464e70dd909b465c7cb93749518f812bb9f2c495c0a46d06fe59ac0", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v2.3.0-rc.1/NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.1-BLE-app.bin"},
-        {"name": "NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.1-BLE-recovery-preserves-settings.bin", "size": 1629840, "sha256": "07dfac5949f4488409e923357b64c27921f7bf2a6018b4293ebdf1a04926bb30", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v2.3.0-rc.1/NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.1-BLE-recovery-preserves-settings.bin"},
-        {"name": "NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.1-Web-app.bin", "size": 1486080, "sha256": "e2f0c011ae5cc6b09fd49147cd01c14c3c5ffd345a2514048d59cf557b0f9386", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v2.3.0-rc.1/NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.1-Web-app.bin"},
-        {"name": "NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.1-Web-recovery-preserves-settings.bin", "size": 1551616, "sha256": "c903fa090c49652578e2a3b363edce8007c518bc4dc768317fd1ebc6f4bc9e3a", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v2.3.0-rc.1/NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.1-Web-recovery-preserves-settings.bin"},
-        {"name": "NeonPocketMC-RCC6-Ultimate-Web-v2.3.0-rc.1.npu", "size": 1486269, "sha256": "18d42cd9912811931d37b67c36958769392540de452d093c47a009fbb09780f4", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v2.3.0-rc.1/NeonPocketMC-RCC6-Ultimate-Web-v2.3.0-rc.1.npu"}
+        {"name": "NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.2-BLE-app.bin", "size": 1564304, "sha256": "b43eac8ddb61683a4ec7bff675b0df2c8416fc55834a5fddfe12f00f3cb8e573", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v2.3.0-rc.2/NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.2-BLE-app.bin"},
+        {"name": "NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.2-BLE-recovery-preserves-settings.bin", "size": 1629840, "sha256": "a40cf11a06673a9d968513c3a1dd6833113b76536ab34d2e5663ed6dfcd3b8a8", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v2.3.0-rc.2/NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.2-BLE-recovery-preserves-settings.bin"},
+        {"name": "NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.2-Web-app.bin", "size": 1486080, "sha256": "e25b4f323bb494b20018db57d06553f4982925f92d79ee5db71a97aa7980cacc", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v2.3.0-rc.2/NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.2-Web-app.bin"},
+        {"name": "NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.2-Web-recovery-preserves-settings.bin", "size": 1551616, "sha256": "789fa0ceabe8e61d939fc39093ab0e6190887a2e0a951d10331d1862bc5e5744", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v2.3.0-rc.2/NeonPocketMC-RCC6-Ultimate-v2.3.0-rc.2-Web-recovery-preserves-settings.bin"},
+        {"name": "NeonPocketMC-RCC6-Ultimate-Web-v2.3.0-rc.2.npu", "size": 1486269, "sha256": "e21ab63e05a50d04d8c221f572bfa3c3faace7866ff8555acb40977c0e8a9de6", "url": "https://github.com/n30nex/NeonPocketMC-RCC6/releases/download/v2.3.0-rc.2/NeonPocketMC-RCC6-Ultimate-Web-v2.3.0-rc.2.npu"}
       ]
     },
     {
