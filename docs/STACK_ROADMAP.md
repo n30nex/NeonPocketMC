@@ -1,6 +1,6 @@
 # NeonPocketMC stack roadmap
 
-Suite `v1.4.0-rc.1` pins the human-first Ultimate RCC6 companion and service dashboards plus the universal triple-press Home shortcut for RC52, Heltec V3, and Heltec V4 companions. Separate firmware images remain mandatory for different chips, radios, displays, and runtime costs. There is no universal image.
+Suite `v1.4.0-rc.2` pins the human-first Ultimate RCC6 companion and service dashboards plus the universal triple-press Home shortcut for RC52, Heltec V3, and Heltec V4 companions. Separate firmware images remain mandatory for different chips, radios, displays, and runtime costs. There is no universal image.
 
 ## Released Room Server builds
 
