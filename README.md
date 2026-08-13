@@ -10,6 +10,12 @@ One release catalog for the NeonPocketMC firmware family. This repository pins t
 
 > **Choose by exact hardware and role. There is no universal image. Never cross-flash RC52, RCC6, Heltec V3, or Heltec V4 firmware.** Attach a suitable LoRa antenna before transmitting.
 
+## Guided Web Flasher
+
+Open **[flasher.canadaverse.org](https://flasher.canadaverse.org/)** in Chrome or Edge to choose exact hardware, transport, role, screen, WebUI, observer, repeater, or Room Server features. It detects the connected device family, verifies every release checksum, flashes without a whole-chip erase, checks the reboot, and guides supported server onboarding before USB is disconnected.
+
+The Pi-hosted interface proxies immutable binaries from their owning GitHub releases; it does not keep a second firmware archive. Native-USB companion images use the standard binary MeshCore companion protocol and are separate from BLE or Wi-Fi images.
+
 ## Demo-scene boot
 
 <p align="center">
@@ -134,13 +140,13 @@ Each product release is pinned to an exact source commit and artifact checksum i
 
 | Hardware | Role | Current release | Normal install |
 |---|---|---|---|
-| Heltec WiFi LoRa 32 V3 + OLED | BLE companion with NeonPocket UI | [v1.0.0-rc.2](https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v1.0.0-rc.2) | Flash the app `.bin` at `0x10000` |
-| Heltec WiFi LoRa 32 V4 + OLED | BLE companion with NeonPocket UI | [v1.0.0-rc.2](https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v1.0.0-rc.2) | Flash the app `.bin` at `0x10000` |
-| RC52-L62 + NV3001B TFT | BLE companion with NeonPocket UI | [v1.1.0-rc.3](https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.1.0-rc.3) | Copy the companion `.uf2` to the RC52 bootloader drive |
+| Heltec WiFi LoRa 32 V3 + OLED | BLE or native-USB companion with NeonPocket UI | [v1.0.0-rc.3](https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v1.0.0-rc.3) | Flash the selected app `.bin` at `0x10000` |
+| Heltec WiFi LoRa 32 V4 + OLED | BLE or native-USB companion with NeonPocket UI | [v1.0.0-rc.3](https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v1.0.0-rc.3) | Flash the selected app `.bin` at `0x10000` |
+| RC52-L62 + NV3001B TFT | BLE or native-USB companion with NeonPocket UI | [v1.1.0-rc.4](https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.1.0-rc.4) | Copy the selected `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless low-power repeater | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the repeater `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless Room Server | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the headless Room Server `.uf2` |
 | RC52-L62 + NV3001B TFT | Room Server with local dashboard | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the TFT Room Server `.uf2` |
-| RCC6 + NV3001B TFT | Ultimate BLE companion or Wi-Fi Web companion | [v2.3.0-rc.2](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.3.0-rc.2) | Flash the selected app `.bin` at `0x10000` |
+| RCC6 + NV3001B TFT | Ultimate BLE, native-USB, or Wi-Fi Web companion | [v2.3.0-rc.3](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.3.0-rc.3) | Flash the selected app `.bin` at `0x10000` |
 | RCC6 | Ultimate MQTT observer/repeater with setup WebUI | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Flash the observer app at `0x10000`, then run the configurator |
 | RCC6, TFT optional | Ultimate minimal or full Room Server | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
 
