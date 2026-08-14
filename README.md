@@ -8,7 +8,7 @@
 
 One release catalog for the NeonPocketMC firmware family. This repository pins the exact released source for every supported RadioCore build and links to each product-owned download.
 
-> **Choose by exact hardware and role. There is no universal image. Never cross-flash RC52, RCC6, Heltec V3, or Heltec V4 firmware.** Attach a suitable LoRa antenna before transmitting.
+> **Choose by exact hardware and role. There is no universal image. Never cross-flash D1L, RC52, RCC6, Heltec V3, or Heltec V4 firmware.** Attach a suitable LoRa antenna before transmitting.
 
 ## Guided Web Flasher
 
@@ -149,6 +149,7 @@ Each product release is pinned to an exact source commit and artifact checksum i
 | RCC6 + NV3001B TFT | Ultimate BLE, native-USB, or Wi-Fi Web companion | [v2.3.0-rc.3](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.3.0-rc.3) | Flash the selected app `.bin` at `0x10000` |
 | RCC6 | Ultimate MQTT observer/repeater with setup WebUI | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Flash the observer app at `0x10000`, then run the configurator |
 | RCC6, TFT optional | Ultimate minimal or full Room Server | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
+| SenseCAP Indicator D1L | DeskOS touch companion with repeater and room management | [v1.7.5](https://github.com/n30nex/DeskOS-MeshCore/releases/tag/v1.7.5) | Existing DeskOS: app at `0x20000`; fresh install: full 8 MB image at `0x0` |
 
 The RCC6 Web companion and networked service builds now use human-first dashboards with traffic bars, delivery and signal analytics, nearby-radio freshness, and coordinate-backed maps that never invent node locations. The MQTT observer/repeater defaults to **3-byte packet hash mode**. Its Windows/Linux configurator covers node name, radio preset and custom radio values, Wi-Fi, MQTT broker selection, and post-setup IP discovery. The preferred public brokers are `mqtt1.meshcore.ca` and `mqtt2.meshcore.ca`; the other upstream-compatible brokers remain selectable/configurable.
 
@@ -160,7 +161,7 @@ Exact install filenames, sizes, SHA-256 values, release links, and source commit
 
 ## Source layout
 
-The six firmware histories intentionally remain separate because they target different chips, bootloaders, transports, displays, and deployment roles. This repository indexes them as pinned Git submodules:
+The seven firmware histories intentionally remain separate because they target different chips, bootloaders, transports, displays, and deployment roles. This repository indexes them as pinned Git submodules:
 
 ```text
 firmware/
@@ -170,6 +171,7 @@ firmware/
   rc52-repeater/
   rcc6-companion/
   rcc6-mqtt-repeater/
+  deskos-meshcore/
 ```
 
 Clone the exact suite source with:
@@ -189,6 +191,7 @@ git submodule update --init --recursive
 - **RC52:** use the UF2 bootloader path for normal installs. Do not replace the SoftDevice or bootloader.
 - **Heltec V3/V4:** use the matching app image at `0x10000` for normal updates. Do not erase the whole flash; full-chip backups can contain private MeshCore identity material.
 - **RCC6:** use the app image at `0x10000` for normal updates. Use a merged recovery image at `0x0` only when bootloader/partition recovery is required. Do not erase the whole flash.
+- **SenseCAP Indicator D1L:** use the DeskOS update image at `0x20000` on an existing install. The full 8 MB image at `0x0` is destructive and only for a fresh or unrecoverable device. The RP2040 SD bridge uses a separate UF2/BOOTSEL step; neither path formats the SD card.
 - RCC6 merged recovery images stop well before SPIFFS and preserve MeshCore identity, contacts, channels, and preferences; they reset NVS-backed BLE bonds and saved Wi-Fi.
 - The RC52 and RCC6 boards do **not** contain an MPPT controller suitable for an unregulated solar panel. Outdoor solar installs need an external regulator/charger matched to the panel and protected 1-cell battery.
 - These are community prereleases, not official Heltec or MeshCore firmware.
@@ -201,4 +204,4 @@ Room Server profiles, animated companion startup, RCC6 Diagnostics, and one-butt
 
 [`scripts/verify_catalog.py`](scripts/verify_catalog.py) confirms each Git submodule pin, release URL, digest, and catalog invariant. Product repositories retain their own exact-target build workflows and hardware-specific release evidence.
 
-Root documentation and catalog code are MIT licensed. Each firmware submodule retains its own upstream and third-party licenses.
+Root documentation and catalog code are MIT licensed. Each of the seven firmware submodules retains its own upstream and third-party licenses.
