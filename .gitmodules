@@ -16,3 +16,6 @@
 [submodule "firmware/heltec-v4-companion"]
 	path = firmware/heltec-v4-companion
 	url = https://github.com/n30nex/NeonPocketMC-Heltec-V4.git
+[submodule "firmware/deskos-meshcore"]
+	path = firmware/deskos-meshcore
+	url = https://github.com/n30nex/DeskOS-MeshCore.git

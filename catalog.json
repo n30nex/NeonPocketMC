@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "suite_version": "1.5.0-rc.1",
+  "suite_version": "1.6.0-rc.1",
   "products": [
     {
       "id": "heltec-v3-companion",
@@ -116,6 +116,22 @@
         {"name": "NeonPocketMC-RCC6-Ultimate-Room-Server-minimal-tft-v1.3.0-rc.1-app.bin", "size": 572320, "sha256": "073847e2937c30abd1b68ccade6007e481d2c3aab80cbdc30d4a17e429d2b90b", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.3.0-rc.1/NeonPocketMC-RCC6-Ultimate-Room-Server-minimal-tft-v1.3.0-rc.1-app.bin"},
         {"name": "NeonPocketMC-RCC6-Ultimate-Room-Server-minimal-tft-v1.3.0-rc.1-full-recovery-preserves-meshcore-settings.bin", "size": 637856, "sha256": "fdae9fce19dc329e8ac6fd3ea2dad8780f236d6721e7a921a7ff045272744f69", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.3.0-rc.1/NeonPocketMC-RCC6-Ultimate-Room-Server-minimal-tft-v1.3.0-rc.1-full-recovery-preserves-meshcore-settings.bin"},
         {"name": "NeonPocketMC-RCC6-Ultimate-Server-v1.3.0-rc.1-configurator.zip", "size": 17855, "sha256": "8d7136d2fbfd7e51ad5da085deef60c0dc0257ea8a973f6d04d556c2bac82a4f", "url": "https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/download/v1.3.0-rc.1/NeonPocketMC-RCC6-Ultimate-Server-v1.3.0-rc.1-configurator.zip"}
+      ]
+    },
+    {
+      "id": "deskos-d1l-client",
+      "hardware": "Seeed SenseCAP Indicator D1L with 480x480 touch display",
+      "role": "Standalone MeshCore desk companion with repeater and room administration",
+      "repository": "https://github.com/n30nex/DeskOS-MeshCore",
+      "release": "https://github.com/n30nex/DeskOS-MeshCore/releases/tag/v1.7.5",
+      "tag": "v1.7.5",
+      "commit": "b719faaed93032211988c00b6a5c0c0ee74ef60b",
+      "submodule": "firmware/deskos-meshcore",
+      "profiles": ["deskos-full-feature"],
+      "artifacts": [
+        {"name": "MeshCore-DeskOS-D1L-1.7.5-UPDATE-existing-deskos-at-0x20000.bin", "size": 2178768, "sha256": "e3dfbf3d3f0f0e339489436ff98ee9eba39ce7f356c192c2612ae552824d835b", "url": "https://github.com/n30nex/DeskOS-MeshCore/releases/download/v1.7.5/MeshCore-DeskOS-D1L-1.7.5-UPDATE-existing-deskos-at-0x20000.bin"},
+        {"name": "MeshCore-DeskOS-D1L-1.7.5-FRESH-CLEAN-full-8mb-at-0x0.bin", "size": 8388608, "sha256": "e5e79bfd76f3dca526978b63261fe23e5be8253f92883579eeeb59d1aea8829c", "url": "https://github.com/n30nex/DeskOS-MeshCore/releases/download/v1.7.5/MeshCore-DeskOS-D1L-1.7.5-FRESH-CLEAN-full-8mb-at-0x0.bin"},
+        {"name": "MeshCore-DeskOS-D1L-1.7.5-RP2040-UPDATE-OR-FRESH.uf2", "size": 305152, "sha256": "404f5c2a15df28fdafe2f556eb69b3b7b635594c88f3273868a6d2cfc3f2225f", "url": "https://github.com/n30nex/DeskOS-MeshCore/releases/download/v1.7.5/MeshCore-DeskOS-D1L-1.7.5-RP2040-UPDATE-OR-FRESH.uf2"}
       ]
     }
   ]
