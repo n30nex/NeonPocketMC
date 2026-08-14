@@ -123,15 +123,15 @@
       "hardware": "Seeed SenseCAP Indicator D1L with 480x480 touch display",
       "role": "Standalone MeshCore desk companion with repeater and room administration",
       "repository": "https://github.com/n30nex/DeskOS-MeshCore",
-      "release": "https://github.com/n30nex/DeskOS-MeshCore/releases/tag/v1.7.5",
-      "tag": "v1.7.5",
-      "commit": "b719faaed93032211988c00b6a5c0c0ee74ef60b",
+      "release": "https://github.com/n30nex/DeskOS-MeshCore/releases/tag/v1.7.6",
+      "tag": "v1.7.6",
+      "commit": "92f838b120cf6e5586d2c69eae207a58b344cd75",
       "submodule": "firmware/deskos-meshcore",
       "profiles": ["deskos-full-feature"],
       "artifacts": [
-        {"name": "MeshCore-DeskOS-D1L-1.7.5-UPDATE-existing-deskos-at-0x20000.bin", "size": 2178768, "sha256": "e3dfbf3d3f0f0e339489436ff98ee9eba39ce7f356c192c2612ae552824d835b", "url": "https://github.com/n30nex/DeskOS-MeshCore/releases/download/v1.7.5/MeshCore-DeskOS-D1L-1.7.5-UPDATE-existing-deskos-at-0x20000.bin"},
-        {"name": "MeshCore-DeskOS-D1L-1.7.5-FRESH-CLEAN-full-8mb-at-0x0.bin", "size": 8388608, "sha256": "e5e79bfd76f3dca526978b63261fe23e5be8253f92883579eeeb59d1aea8829c", "url": "https://github.com/n30nex/DeskOS-MeshCore/releases/download/v1.7.5/MeshCore-DeskOS-D1L-1.7.5-FRESH-CLEAN-full-8mb-at-0x0.bin"},
-        {"name": "MeshCore-DeskOS-D1L-1.7.5-RP2040-UPDATE-OR-FRESH.uf2", "size": 305152, "sha256": "404f5c2a15df28fdafe2f556eb69b3b7b635594c88f3273868a6d2cfc3f2225f", "url": "https://github.com/n30nex/DeskOS-MeshCore/releases/download/v1.7.5/MeshCore-DeskOS-D1L-1.7.5-RP2040-UPDATE-OR-FRESH.uf2"}
+        {"name": "MeshCore-DeskOS-D1L-1.7.6-UPDATE-existing-deskos-at-0x20000.bin", "size": 2178976, "sha256": "df42c8a45e2795b3e2b31dcb04d69a738873983c17c30a1ca8bb03132763a578", "url": "https://github.com/n30nex/DeskOS-MeshCore/releases/download/v1.7.6/MeshCore-DeskOS-D1L-1.7.6-UPDATE-existing-deskos-at-0x20000.bin"},
+        {"name": "MeshCore-DeskOS-D1L-1.7.6-FRESH-CLEAN-full-8mb-at-0x0.bin", "size": 8388608, "sha256": "74f5230114aa33c17743473a43dbf0177748eff0ed1f4a963761130f109d0665", "url": "https://github.com/n30nex/DeskOS-MeshCore/releases/download/v1.7.6/MeshCore-DeskOS-D1L-1.7.6-FRESH-CLEAN-full-8mb-at-0x0.bin"},
+        {"name": "MeshCore-DeskOS-D1L-1.7.6-RP2040-UPDATE-OR-FRESH.uf2", "size": 305152, "sha256": "404f5c2a15df28fdafe2f556eb69b3b7b635594c88f3273868a6d2cfc3f2225f", "url": "https://github.com/n30nex/DeskOS-MeshCore/releases/download/v1.7.6/MeshCore-DeskOS-D1L-1.7.6-RP2040-UPDATE-OR-FRESH.uf2"}
       ]
     }
   ]
