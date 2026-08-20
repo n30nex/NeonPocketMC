@@ -25,3 +25,6 @@
 [submodule "firmware/rcc6-headless-companion"]
 	path = firmware/rcc6-headless-companion
 	url = https://github.com/n30nex/NeonPocketMC-RCC6-Headless.git
+[submodule "firmware/ulp-solar-repeaters"]
+	path = firmware/ulp-solar-repeaters
+	url = https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters.git
