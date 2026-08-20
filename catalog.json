@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "suite_version": "1.6.0-rc.1",
+  "suite_version": "1.7.0-rc.1",
   "products": [
     {
       "id": "heltec-v3-companion",
@@ -51,6 +51,21 @@
         {"name": "NeonPocketMC-RC52-1.1-RC4-BLE.uf2", "size": 764416, "sha256": "b28263539a221b532862b7e67f70623651b39b7cf98dccb99855ec6c7c3dee28", "url": "https://github.com/n30nex/NeonPocketMC-RC52/releases/download/v1.1.0-rc.4/NeonPocketMC-RC52-1.1-RC4-BLE.uf2"},
         {"name": "NeonPocketMC-RC52-1.1-RC4-USB.hex", "size": 1059278, "sha256": "42cb684a970e62f23fcfa0d57b246be4cc3f3f4f0523ab9d1469cbfeefb45c36", "url": "https://github.com/n30nex/NeonPocketMC-RC52/releases/download/v1.1.0-rc.4/NeonPocketMC-RC52-1.1-RC4-USB.hex"},
         {"name": "NeonPocketMC-RC52-1.1-RC4-USB.uf2", "size": 753152, "sha256": "56a1cc9498fdd816ec2284e0f5ce64eea99c42c642d956e5100a2a7e3900cf48", "url": "https://github.com/n30nex/NeonPocketMC-RC52/releases/download/v1.1.0-rc.4/NeonPocketMC-RC52-1.1-RC4-USB.uf2"}
+      ]
+    },
+    {
+      "id": "rc52-headless-companion",
+      "hardware": "Heltec RadioCore RC52-L62 without TFT",
+      "role": "Screenless BLE companion with fixed pairing PIN 123456",
+      "repository": "https://github.com/n30nex/NeonPocketMC-RC52-Headless",
+      "release": "https://github.com/n30nex/NeonPocketMC-RC52-Headless/releases/tag/v1.0.0-rc.1",
+      "tag": "v1.0.0-rc.1",
+      "commit": "0ddb59190b880f2a5059f1d1e6a0cb2918fbe6a8",
+      "submodule": "firmware/rc52-headless-companion",
+      "profiles": ["ble-companion-headless"],
+      "artifacts": [
+        {"name": "NeonPocketMC-RC52-Headless-1.0-RC1-BLE.hex", "size": 974510, "sha256": "40a5e4f764ec5d86da0420a844b0e05ec0ce844440482688aee4c0663c33c010", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Headless/releases/download/v1.0.0-rc.1/NeonPocketMC-RC52-Headless-1.0-RC1-BLE.hex"},
+        {"name": "NeonPocketMC-RC52-Headless-1.0-RC1-BLE.uf2", "size": 693248, "sha256": "6aaad62897e51c4ae07d6f3075c539b3ab3dbb3712d9f7f7a08dfd1a9d57b251", "url": "https://github.com/n30nex/NeonPocketMC-RC52-Headless/releases/download/v1.0.0-rc.1/NeonPocketMC-RC52-Headless-1.0-RC1-BLE.uf2"}
       ]
     },
     {

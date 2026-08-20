@@ -143,6 +143,7 @@ Each product release is pinned to an exact source commit and artifact checksum i
 | Heltec WiFi LoRa 32 V3 + OLED | BLE or native-USB companion with NeonPocket UI | [v1.0.0-rc.3](https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v1.0.0-rc.3) | Flash the selected app `.bin` at `0x10000` |
 | Heltec WiFi LoRa 32 V4 + OLED | BLE or native-USB companion with NeonPocket UI | [v1.0.0-rc.3](https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v1.0.0-rc.3) | Flash the selected app `.bin` at `0x10000` |
 | RC52-L62 + NV3001B TFT | BLE or native-USB companion with NeonPocket UI | [v1.1.0-rc.4](https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.1.0-rc.4) | Copy the selected `.uf2` to the RC52 bootloader drive |
+| RC52-L62 without TFT | Screenless BLE companion; pairing PIN `123456` | [v1.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-RC52-Headless/releases/tag/v1.0.0-rc.1) | Copy the BLE `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless low-power repeater | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the repeater `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless Room Server | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the headless Room Server `.uf2` |
 | RC52-L62 + NV3001B TFT | Room Server with local dashboard | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the TFT Room Server `.uf2` |
@@ -161,13 +162,14 @@ Exact install filenames, sizes, SHA-256 values, release links, and source commit
 
 ## Source layout
 
-The seven firmware histories intentionally remain separate because they target different chips, bootloaders, transports, displays, and deployment roles. This repository indexes them as pinned Git submodules:
+The eight firmware histories intentionally remain separate because they target different chips, bootloaders, transports, displays, and deployment roles. This repository indexes them as pinned Git submodules:
 
 ```text
 firmware/
   heltec-v3-companion/
   heltec-v4-companion/
   rc52-companion/
+  rc52-headless-companion/
   rc52-repeater/
   rcc6-companion/
   rcc6-mqtt-repeater/
@@ -188,7 +190,7 @@ git submodule update --init --recursive
 
 ## Important hardware notes
 
-- **RC52:** use the UF2 bootloader path for normal installs. Do not replace the SoftDevice or bootloader.
+- **RC52:** use the UF2 bootloader path for normal installs. Do not replace the SoftDevice or bootloader. The dedicated screenless BLE build uses fixed pairing PIN `123456`.
 - **Heltec V3/V4:** use the matching app image at `0x10000` for normal updates. Do not erase the whole flash; full-chip backups can contain private MeshCore identity material.
 - **RCC6:** use the app image at `0x10000` for normal updates. Use a merged recovery image at `0x0` only when bootloader/partition recovery is required. Do not erase the whole flash.
 - **SenseCAP Indicator D1L:** use the DeskOS update image at `0x20000` on an existing install. The full 8 MB image at `0x0` is destructive and only for a fresh or unrecoverable device. The RP2040 SD bridge uses a separate UF2/BOOTSEL step; neither path formats the SD card.
@@ -204,4 +206,4 @@ Room Server profiles, animated companion startup, RCC6 Diagnostics, and one-butt
 
 [`scripts/verify_catalog.py`](scripts/verify_catalog.py) confirms each Git submodule pin, release URL, digest, and catalog invariant. Product repositories retain their own exact-target build workflows and hardware-specific release evidence.
 
-Root documentation and catalog code are MIT licensed. Each of the seven firmware submodules retains its own upstream and third-party licenses.
+Root documentation and catalog code are MIT licensed. Each of the eight firmware submodules retains its own upstream and third-party licenses.

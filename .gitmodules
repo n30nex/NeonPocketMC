@@ -19,3 +19,6 @@
 [submodule "firmware/deskos-meshcore"]
 	path = firmware/deskos-meshcore
 	url = https://github.com/n30nex/DeskOS-MeshCore.git
+[submodule "firmware/rc52-headless-companion"]
+	path = firmware/rc52-headless-companion
+	url = https://github.com/n30nex/NeonPocketMC-RC52-Headless.git
