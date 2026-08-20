@@ -134,6 +134,14 @@ These frames were captured from the OLED framebuffer running on the physical Hel
 
 Capture provenance and checksums are recorded with each device gallery under [`docs/images`](docs/images).
 
+## ULP Solar Repeaters
+
+[NeonPocketMC ULP Solar Repeaters](https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters) are experimental MeshCore 1.17.1 builds for Heltec V3/V4, RAK4631, RAK3401 1 W, Xiao ESP32-S3, Xiao nRF52840, RCC6, and RC52. RCC6 and RC52 each have separate headless and 220×128 TFT images.
+
+Power saving is **ON by default** on new installs. The recommended balanced profile combines MCU sleep with SX1262 receive duty cycling; the simple USB configurator handles name, radio preset, transmit power, admin password, and the ULP level before deployment. This work is based on and fully attributes [IoTThinks' EasySkyMesh power-saving implementation](https://github.com/IoTThinks/EasySkyMesh/releases/tag/PowerSaving17.1).
+
+> RX duty cycling trades receive availability for energy savings and can miss packets. Solar deployments still require a protected battery and an external MPPT/charge controller matched to the panel and cell—never connect a raw panel directly to VBAT or USB.
+
 ## Current builds
 
 Each product release is pinned to an exact source commit and artifact checksum in [`catalog.json`](catalog.json). Board-specific bootloaders, partitions, displays, and radio power paths remain separate.
@@ -151,6 +159,7 @@ Each product release is pinned to an exact source commit and artifact checksum i
 | RCC6 without TFT | Screenless BLE, native-USB, or Wi-Fi Web/TCP companion | [v1.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Headless/releases/tag/v1.0.0-rc.1) | Flash the selected app `.bin` at `0x10000` |
 | RCC6 | Ultimate MQTT observer/repeater with setup WebUI | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Flash the observer app at `0x10000`, then run the configurator |
 | RCC6, TFT optional | Ultimate minimal or full Room Server | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
+| V3, V4, RAK4631, RAK3401 1 W, Xiao ESP32-S3/nRF52840, RCC6, RC52 | Experimental ULP Solar Repeater; RCC6/RC52 headless or TFT | [v1.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/tag/v1.0.0-rc.1) | Pick the exact board image; use app-only `.bin` at `0x10000` or matching nRF52 `.uf2` |
 | SenseCAP Indicator D1L | DeskOS touch companion with repeater and room management | [v1.7.9](https://github.com/n30nex/DeskOS-MeshCore/releases/tag/v1.7.9) | Existing DeskOS: app at `0x20000`; fresh install: full 8 MB image at `0x0` |
 
 The RCC6 Web companion and networked service builds now use human-first dashboards with traffic bars, delivery and signal analytics, nearby-radio freshness, and coordinate-backed maps that never invent node locations. The MQTT observer/repeater defaults to **3-byte packet hash mode**. Its Windows/Linux configurator covers node name, radio preset and custom radio values, Wi-Fi, MQTT broker selection, and post-setup IP discovery. The preferred public brokers are `mqtt1.meshcore.ca` and `mqtt2.meshcore.ca`; the other upstream-compatible brokers remain selectable/configurable.
@@ -163,7 +172,7 @@ Exact install filenames, sizes, SHA-256 values, release links, and source commit
 
 ## Source layout
 
-The nine firmware histories intentionally remain separate because they target different chips, bootloaders, transports, displays, and deployment roles. This repository indexes them as pinned Git submodules:
+The ten firmware histories intentionally remain separate because they target different chips, bootloaders, transports, displays, and deployment roles. This repository indexes them as pinned Git submodules:
 
 ```text
 firmware/
@@ -175,6 +184,7 @@ firmware/
   rcc6-companion/
   rcc6-headless-companion/
   rcc6-mqtt-repeater/
+  ulp-solar-repeaters/
   deskos-meshcore/
 ```
 
@@ -198,7 +208,7 @@ git submodule update --init --recursive
 - **SenseCAP Indicator D1L:** use the DeskOS update image at `0x20000` on an existing install. The full 8 MB image at `0x0` is destructive and only for a fresh or unrecoverable device. The RP2040 SD bridge uses a separate UF2/BOOTSEL step; neither path formats the SD card.
 - RCC6 merged recovery images stop well before SPIFFS and preserve MeshCore identity, contacts, channels, and preferences; they reset NVS-backed BLE bonds and saved Wi-Fi.
 - The RC52 and RCC6 boards do **not** contain an MPPT controller suitable for an unregulated solar panel. Outdoor solar installs need an external regulator/charger matched to the panel and protected 1-cell battery.
-- These are community prereleases, not official Heltec or MeshCore firmware.
+- ULP Solar Repeaters are community builds based on IoTThinks EasySkyMesh power-saving work; they are not official IoTThinks, Heltec, RAKwireless, Seeed Studio, or MeshCore firmware.
 
 See [`FLASHING.md`](FLASHING.md) for practical install and recovery instructions.
 
@@ -208,4 +218,4 @@ Room Server profiles, animated companion startup, RCC6 Diagnostics, and one-butt
 
 [`scripts/verify_catalog.py`](scripts/verify_catalog.py) confirms each Git submodule pin, release URL, digest, and catalog invariant. Product repositories retain their own exact-target build workflows and hardware-specific release evidence.
 
-Root documentation and catalog code are MIT licensed. Each of the nine firmware submodules retains its own upstream and third-party licenses.
+Root documentation and catalog code are MIT licensed. Each of the ten firmware submodules retains its own upstream and third-party licenses.
