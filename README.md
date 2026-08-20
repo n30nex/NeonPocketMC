@@ -148,6 +148,7 @@ Each product release is pinned to an exact source commit and artifact checksum i
 | RC52-L62 | Headless Room Server | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the headless Room Server `.uf2` |
 | RC52-L62 + NV3001B TFT | Room Server with local dashboard | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the TFT Room Server `.uf2` |
 | RCC6 + NV3001B TFT | Ultimate BLE, native-USB, or Wi-Fi Web companion | [v2.3.0-rc.3](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.3.0-rc.3) | Flash the selected app `.bin` at `0x10000` |
+| RCC6 without TFT | Screenless BLE, native-USB, or Wi-Fi Web/TCP companion | [v1.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Headless/releases/tag/v1.0.0-rc.1) | Flash the selected app `.bin` at `0x10000` |
 | RCC6 | Ultimate MQTT observer/repeater with setup WebUI | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Flash the observer app at `0x10000`, then run the configurator |
 | RCC6, TFT optional | Ultimate minimal or full Room Server | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
 | SenseCAP Indicator D1L | DeskOS touch companion with repeater and room management | [v1.7.9](https://github.com/n30nex/DeskOS-MeshCore/releases/tag/v1.7.9) | Existing DeskOS: app at `0x20000`; fresh install: full 8 MB image at `0x0` |
@@ -162,7 +163,7 @@ Exact install filenames, sizes, SHA-256 values, release links, and source commit
 
 ## Source layout
 
-The eight firmware histories intentionally remain separate because they target different chips, bootloaders, transports, displays, and deployment roles. This repository indexes them as pinned Git submodules:
+The nine firmware histories intentionally remain separate because they target different chips, bootloaders, transports, displays, and deployment roles. This repository indexes them as pinned Git submodules:
 
 ```text
 firmware/
@@ -172,6 +173,7 @@ firmware/
   rc52-headless-companion/
   rc52-repeater/
   rcc6-companion/
+  rcc6-headless-companion/
   rcc6-mqtt-repeater/
   deskos-meshcore/
 ```
@@ -206,4 +208,4 @@ Room Server profiles, animated companion startup, RCC6 Diagnostics, and one-butt
 
 [`scripts/verify_catalog.py`](scripts/verify_catalog.py) confirms each Git submodule pin, release URL, digest, and catalog invariant. Product repositories retain their own exact-target build workflows and hardware-specific release evidence.
 
-Root documentation and catalog code are MIT licensed. Each of the eight firmware submodules retains its own upstream and third-party licenses.
+Root documentation and catalog code are MIT licensed. Each of the nine firmware submodules retains its own upstream and third-party licenses.

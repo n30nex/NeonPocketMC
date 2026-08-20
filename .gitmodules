@@ -22,3 +22,6 @@
 [submodule "firmware/rc52-headless-companion"]
 	path = firmware/rc52-headless-companion
 	url = https://github.com/n30nex/NeonPocketMC-RC52-Headless.git
+[submodule "firmware/rcc6-headless-companion"]
+	path = firmware/rcc6-headless-companion
+	url = https://github.com/n30nex/NeonPocketMC-RCC6-Headless.git
