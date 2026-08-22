@@ -155,10 +155,10 @@ Each product release is pinned to an exact source commit and artifact checksum i
 | RC52-L62 | Headless low-power repeater | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the repeater `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless Room Server | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the headless Room Server `.uf2` |
 | RC52-L62 + NV3001B TFT | Room Server with local dashboard | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the TFT Room Server `.uf2` |
-| RCC6 + NV3001B TFT | Ultimate BLE, native-USB, or Wi-Fi Web companion | [v2.3.0-rc.3](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.3.0-rc.3) | Flash the selected app `.bin` at `0x10000` |
-| RCC6 without TFT | Screenless BLE, native-USB, or Wi-Fi Web/TCP companion | [v1.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Headless/releases/tag/v1.0.0-rc.1) | Flash the selected app `.bin` at `0x10000` |
-| RCC6 | Ultimate MQTT observer/repeater with setup WebUI | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Flash the observer app at `0x10000`, then run the configurator |
-| RCC6, TFT optional | Ultimate minimal or full Room Server | [v1.3.0-rc.1](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.1) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
+| RCC6 + NV3001B TFT | Ultimate BLE, native-USB, or Wi-Fi Web companion | [v2.3.0-rc.4](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.3.0-rc.4) | Flash the selected app `.bin` at `0x10000` |
+| RCC6 without TFT | Screenless BLE, native-USB, or Wi-Fi Web/TCP companion | [v1.0.0-rc.2](https://github.com/n30nex/NeonPocketMC-RCC6-Headless/releases/tag/v1.0.0-rc.2) | Flash the selected app `.bin` at `0x10000` |
+| RCC6 | Ultimate MQTT observer/repeater with setup WebUI | [v1.3.0-rc.2](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.2) | Flash the observer app at `0x10000`, then run the configurator |
+| RCC6, TFT optional | Ultimate minimal or full Room Server | [v1.3.0-rc.2](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.2) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
 | V3, V4, RAK4631, RAK3401 1 W, Xiao ESP32-S3/nRF52840, RCC6, RC52 | Experimental ULP Solar Repeater; RCC6/RC52 headless or TFT | [v1.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/tag/v1.0.0-rc.1) | Pick the exact board image; use app-only `.bin` at `0x10000` or matching nRF52 `.uf2` |
 | SenseCAP Indicator D1L | DeskOS touch companion with repeater and room management | [v1.7.9](https://github.com/n30nex/DeskOS-MeshCore/releases/tag/v1.7.9) | Existing DeskOS: app at `0x20000`; fresh install: full 8 MB image at `0x0` |
 
