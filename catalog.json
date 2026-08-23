@@ -1,39 +1,51 @@
 {
   "schema": 1,
-  "suite_version": "1.9.0-rc.2",
+  "suite_version": "1.10.0-rc.1",
   "products": [
     {
       "id": "heltec-v3-companion",
       "hardware": "Heltec WiFi LoRa 32 V3 with integrated 128x64 OLED",
-      "role": "BLE or native-USB companion with NeonPocket OLED UI",
+      "role": "BLE, native-USB, Ultimate Web companion, or Ultimate Wi-Fi repeater with NeonPocket OLED UI",
       "repository": "https://github.com/n30nex/NeonPocketMC-Heltec-V3",
-      "release": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v1.0.0-rc.3",
-      "tag": "v1.0.0-rc.3",
-      "commit": "4c8b6d56a3976f2b34a0a70e5b5f2b9051e20e21",
+      "release": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v2.0.0-rc.1",
+      "tag": "v2.0.0-rc.1",
+      "commit": "02f8ec87a3061811d78e3b6ac3614bacd99b3b24",
       "submodule": "firmware/heltec-v3-companion",
-      "profiles": ["ble-companion-oled", "usb-companion-oled"],
+      "profiles": ["ble-companion-oled", "usb-companion-oled", "ultimate-ble-companion-oled", "ultimate-web-companion-oled", "ultimate-repeater-web-oled"],
       "artifacts": [
-        {"name": "NeonPocketMC-Heltec-V3-BLE-app.bin", "size": 1272352, "sha256": "ce7e7b3cbc56b8a984f22618aff582cf62cceec6ff6af495f493f71a9e506a15", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v1.0.0-rc.3/NeonPocketMC-Heltec-V3-BLE-app.bin"},
-        {"name": "NeonPocketMC-Heltec-V3-BLE-recovery-preserves-settings.bin", "size": 1337888, "sha256": "cc0253b9fb6b5164651c6c3e27fea4c57154efdf667b58356a3f147009cd28f6", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v1.0.0-rc.3/NeonPocketMC-Heltec-V3-BLE-recovery-preserves-settings.bin"},
-        {"name": "NeonPocketMC-Heltec-V3-USB-app.bin", "size": 645824, "sha256": "487c9a2e72702810bc6a56dc04c09b97a98222ec9c0549eade0d9617bd5ee955", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v1.0.0-rc.3/NeonPocketMC-Heltec-V3-USB-app.bin"},
-        {"name": "NeonPocketMC-Heltec-V3-USB-recovery-preserves-settings.bin", "size": 711360, "sha256": "dd601a8ef38817576bf49653dfa76fd05d74b53ded21759b3edfe8accef8035f", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v1.0.0-rc.3/NeonPocketMC-Heltec-V3-USB-recovery-preserves-settings.bin"}
+        {"name": "NeonPocketMC-Heltec-V3-BLE-app.bin", "size": 1272784, "sha256": "4abb0282a95aef240010775e432c3b20344897b5a3b76d827ee583822a17219b", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V3-BLE-app.bin"},
+        {"name": "NeonPocketMC-Heltec-V3-BLE-recovery-preserves-settings.bin", "size": 1338320, "sha256": "31312a1266f2d1e9e021b6ff142ccda0c6011f9dfbb6016dfba371cdfa0cf388", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V3-BLE-recovery-preserves-settings.bin"},
+        {"name": "NeonPocketMC-Heltec-V3-USB-app.bin", "size": 646304, "sha256": "7c57b57b796d19aed922269fdecfd03c403f3db7010d0cfb483abde9e7bdc5f0", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V3-USB-app.bin"},
+        {"name": "NeonPocketMC-Heltec-V3-USB-recovery-preserves-settings.bin", "size": 711840, "sha256": "07298e381c9280e60c91210dc4a3929bf29b7abca49068c5876a73fe67256843", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V3-USB-recovery-preserves-settings.bin"},
+        {"name": "NeonPocketMC-Heltec-V3-Ultimate-BLE-app.bin", "size": 1314640, "sha256": "df58930aab88842361f994c570ead412c6352b31bb84e0bfec38165b62c5cbcc", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V3-Ultimate-BLE-app.bin"},
+        {"name": "NeonPocketMC-Heltec-V3-Ultimate-BLE-recovery-preserves-settings.bin", "size": 1380176, "sha256": "b685e3e51f8c6e2c12c98c33e234c429d8abae26a76771ef060647756c4ef926", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V3-Ultimate-BLE-recovery-preserves-settings.bin"},
+        {"name": "NeonPocketMC-Heltec-V3-Ultimate-Web-app.bin", "size": 1251360, "sha256": "7b28b486067f8b376e76cc93091084748e49dabdf0da52e64070c219e8cf55e0", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V3-Ultimate-Web-app.bin"},
+        {"name": "NeonPocketMC-Heltec-V3-Ultimate-Web-recovery-preserves-settings.bin", "size": 1316896, "sha256": "15038e902af98972361924abb11c11e9cc101330c40b91f4efa4dd34e080f48e", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V3-Ultimate-Web-recovery-preserves-settings.bin"},
+        {"name": "NeonPocketMC-Heltec-V3-Ultimate-Repeater-Web-app.bin", "size": 1117712, "sha256": "59b96ebc918cd73a19123a4b0d785d74d5295453db6978a862099a4bfa2923ef", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V3-Ultimate-Repeater-Web-app.bin"},
+        {"name": "NeonPocketMC-Heltec-V3-Ultimate-Repeater-Web-recovery-preserves-settings.bin", "size": 1183248, "sha256": "95bb751ac6ef2d52ec8cbc263bc44e830ca436f80eb443529379ad3788d56d4e", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V3-Ultimate-Repeater-Web-recovery-preserves-settings.bin"}
       ]
     },
     {
       "id": "heltec-v4-companion",
       "hardware": "Heltec WiFi LoRa 32 V4/V4.3 with integrated 128x64 OLED",
-      "role": "BLE or native-USB companion with NeonPocket OLED UI",
+      "role": "BLE, native-USB, Ultimate Web companion, or Ultimate Wi-Fi repeater with NeonPocket OLED UI",
       "repository": "https://github.com/n30nex/NeonPocketMC-Heltec-V4",
-      "release": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v1.0.0-rc.3",
-      "tag": "v1.0.0-rc.3",
-      "commit": "9e5796badca70d1eafd97c94481e646ed82422f5",
+      "release": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v2.0.0-rc.1",
+      "tag": "v2.0.0-rc.1",
+      "commit": "807efbba11dda35d3d72d0f8ee9e3a0502e24bcf",
       "submodule": "firmware/heltec-v4-companion",
-      "profiles": ["ble-companion-oled", "usb-companion-oled"],
+      "profiles": ["ble-companion-oled", "usb-companion-oled", "ultimate-ble-companion-oled", "ultimate-web-companion-oled", "ultimate-repeater-web-oled"],
       "artifacts": [
-        {"name": "NeonPocketMC-Heltec-V4-BLE-app.bin", "size": 1270048, "sha256": "d1b57b3489cc2b4b38e17b0e239e4cc270de942c97c378b85f6519691788c5dd", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v1.0.0-rc.3/NeonPocketMC-Heltec-V4-BLE-app.bin"},
-        {"name": "NeonPocketMC-Heltec-V4-BLE-recovery-preserves-settings.bin", "size": 1335584, "sha256": "1f91e22087a00a86d8d95d171eb4b7706b99ba8357d812b8f5d5df2bcd373a13", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v1.0.0-rc.3/NeonPocketMC-Heltec-V4-BLE-recovery-preserves-settings.bin"},
-        {"name": "NeonPocketMC-Heltec-V4-USB-app.bin", "size": 643536, "sha256": "f06966e1410a009da05525e32eff3461fe4e550108f0e737e5f4a8b12f68cbac", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v1.0.0-rc.3/NeonPocketMC-Heltec-V4-USB-app.bin"},
-        {"name": "NeonPocketMC-Heltec-V4-USB-recovery-preserves-settings.bin", "size": 709072, "sha256": "9e3ec619d0eb1e88ea7470cdf23dd237973d68e648f4eb4f9b9d61887e974931", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v1.0.0-rc.3/NeonPocketMC-Heltec-V4-USB-recovery-preserves-settings.bin"}
+        {"name": "NeonPocketMC-Heltec-V4-BLE-app.bin", "size": 1270544, "sha256": "1e6c6e0ea0837252e3c158fd61d14c7b7896b5c970c493c1c5011d36b7527bd8", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V4-BLE-app.bin"},
+        {"name": "NeonPocketMC-Heltec-V4-BLE-recovery-preserves-settings.bin", "size": 1336080, "sha256": "284b643ee2b8d35a622348b684406f8d68cd08247cc10e6667aa322678cd4a1a", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V4-BLE-recovery-preserves-settings.bin"},
+        {"name": "NeonPocketMC-Heltec-V4-USB-app.bin", "size": 644032, "sha256": "6e181c57d1e757ba503421c0a5f12e0ae4864da3eee0a71ce424d37950b85b48", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V4-USB-app.bin"},
+        {"name": "NeonPocketMC-Heltec-V4-USB-recovery-preserves-settings.bin", "size": 709568, "sha256": "c7b44e90b7e63cd9c575c74f6b782f7d70e269189b128869e3569e750607b54e", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V4-USB-recovery-preserves-settings.bin"},
+        {"name": "NeonPocketMC-Heltec-V4-Ultimate-BLE-app.bin", "size": 1312448, "sha256": "96a751ab782c451fcae1bac70b629e60fc8fc68f470dede17ef0d8f71bf092d5", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V4-Ultimate-BLE-app.bin"},
+        {"name": "NeonPocketMC-Heltec-V4-Ultimate-BLE-recovery-preserves-settings.bin", "size": 1377984, "sha256": "5a274d0ce789b0af0a654dedf578615c2e3efe83e118307ce0d0fca1ecf2e185", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V4-Ultimate-BLE-recovery-preserves-settings.bin"},
+        {"name": "NeonPocketMC-Heltec-V4-Ultimate-Web-app.bin", "size": 1248928, "sha256": "cee81b67cbe2a3adfcf3677733179c5d45bc00dc05458eac8280506aed57d889", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V4-Ultimate-Web-app.bin"},
+        {"name": "NeonPocketMC-Heltec-V4-Ultimate-Web-recovery-preserves-settings.bin", "size": 1314464, "sha256": "2629815dc5e69d984ccc658ab4b2627e531ebaee5dca6f533495328d94f5eec8", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V4-Ultimate-Web-recovery-preserves-settings.bin"},
+        {"name": "NeonPocketMC-Heltec-V4-Ultimate-Repeater-Web-app.bin", "size": 1115408, "sha256": "c538b931b41e0bc29feab4f2c65a9d181659534a40c0bd38b2b4ef5ab6f23671", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V4-Ultimate-Repeater-Web-app.bin"},
+        {"name": "NeonPocketMC-Heltec-V4-Ultimate-Repeater-Web-recovery-preserves-settings.bin", "size": 1180944, "sha256": "7551875a375a2fec1273b720f6244a7d27cdbecf37d633d4ccaeb71dd969b151", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V4-Ultimate-Repeater-Web-recovery-preserves-settings.bin"}
       ]
     },
     {

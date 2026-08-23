@@ -148,8 +148,8 @@ Each product release is pinned to an exact source commit and artifact checksum i
 
 | Hardware | Role | Current release | Normal install |
 |---|---|---|---|
-| Heltec WiFi LoRa 32 V3 + OLED | BLE or native-USB companion with NeonPocket UI | [v1.0.0-rc.3](https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v1.0.0-rc.3) | Flash the selected app `.bin` at `0x10000` |
-| Heltec WiFi LoRa 32 V4 + OLED | BLE or native-USB companion with NeonPocket UI | [v1.0.0-rc.3](https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v1.0.0-rc.3) | Flash the selected app `.bin` at `0x10000` |
+| Heltec WiFi LoRa 32 V3 + OLED | BLE, native-USB, Ultimate Web companion, or Ultimate Repeater WebUI | [v2.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v2.0.0-rc.1) | Flash the selected app `.bin` at `0x10000` |
+| Heltec WiFi LoRa 32 V4 + OLED | BLE, native-USB, Ultimate Web companion, or Ultimate Repeater WebUI | [v2.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v2.0.0-rc.1) | Flash the selected app `.bin` at `0x10000` |
 | RC52-L62 + NV3001B TFT | BLE or native-USB companion with NeonPocket UI | [v1.1.0-rc.4](https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.1.0-rc.4) | Copy the selected `.uf2` to the RC52 bootloader drive |
 | RC52-L62 without TFT | Screenless BLE companion; pairing PIN `123456` | [v1.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-RC52-Headless/releases/tag/v1.0.0-rc.1) | Copy the BLE `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless low-power repeater | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the repeater `.uf2` to the RC52 bootloader drive |
