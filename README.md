@@ -148,21 +148,23 @@ Each product release is pinned to an exact source commit and artifact checksum i
 
 | Hardware | Role | Current release | Normal install |
 |---|---|---|---|
-| Heltec WiFi LoRa 32 V3 + OLED | BLE, native-USB, Ultimate Web companion, or Ultimate Repeater WebUI | [v2.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v2.0.0-rc.1) | Flash the selected app `.bin` at `0x10000` |
-| Heltec WiFi LoRa 32 V4 + OLED | BLE, native-USB, Ultimate Web companion, or Ultimate Repeater WebUI | [v2.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v2.0.0-rc.1) | Flash the selected app `.bin` at `0x10000` |
+| Heltec WiFi LoRa 32 V3 + OLED | BLE, native-USB, Ultimate Web companion, or Ultimate Repeater WebUI | [v2.0.0-rc.2](https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v2.0.0-rc.2) | Flash the selected app `.bin` at `0x10000` |
+| Heltec WiFi LoRa 32 V4 + OLED | BLE, native-USB, Ultimate Web companion, or Ultimate Repeater WebUI | [v2.0.0-rc.2](https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v2.0.0-rc.2) | Flash the selected app `.bin` at `0x10000` |
 | RC52-L62 + NV3001B TFT | BLE or native-USB companion with NeonPocket UI | [v1.1.0-rc.4](https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.1.0-rc.4) | Copy the selected `.uf2` to the RC52 bootloader drive |
 | RC52-L62 without TFT | Screenless BLE companion; pairing PIN `123456` | [v1.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-RC52-Headless/releases/tag/v1.0.0-rc.1) | Copy the BLE `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless low-power repeater | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the repeater `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless Room Server | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the headless Room Server `.uf2` |
 | RC52-L62 + NV3001B TFT | Room Server with local dashboard | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the TFT Room Server `.uf2` |
-| RCC6 + NV3001B TFT | Ultimate BLE, native-USB, or Wi-Fi Web companion | [v2.3.0-rc.5](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.3.0-rc.5) | Flash the selected app `.bin` at `0x10000` |
-| RCC6 without TFT | Screenless BLE, native-USB, or Wi-Fi Web/TCP companion | [v1.0.0-rc.3](https://github.com/n30nex/NeonPocketMC-RCC6-Headless/releases/tag/v1.0.0-rc.3) | Flash the selected app `.bin` at `0x10000` |
+| RCC6 + NV3001B TFT | Ultimate BLE, native-USB, or Wi-Fi Web companion | [v2.3.0-rc.7](https://github.com/n30nex/NeonPocketMC-RCC6/releases/tag/v2.3.0-rc.7) | Flash the selected app `.bin` at `0x10000` |
+| RCC6 without TFT | Screenless BLE, native-USB, or Wi-Fi Web/TCP companion | [v1.0.0-rc.5](https://github.com/n30nex/NeonPocketMC-RCC6-Headless/releases/tag/v1.0.0-rc.5) | Flash the selected app `.bin` at `0x10000` |
 | RCC6 | Ultimate MQTT observer/repeater with setup WebUI | [v1.3.0-rc.3](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.3) | Flash the observer app at `0x10000`, then run the configurator |
 | RCC6, TFT optional | Ultimate minimal or full Room Server | [v1.3.0-rc.3](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.3) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
 | V3, V4, RAK4631, RAK3401 1 W, Xiao ESP32-S3/nRF52840, RCC6, RC52 | Experimental ULP Solar Repeater; RCC6/RC52 headless or TFT | [v1.0.0-rc.2](https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/tag/v1.0.0-rc.2) | Pick the exact board image; use app-only `.bin` at `0x10000` or matching nRF52 `.uf2` |
 | SenseCAP Indicator D1L | DeskOS touch companion with repeater and room management | [v1.7.9](https://github.com/n30nex/DeskOS-MeshCore/releases/tag/v1.7.9) | Existing DeskOS: app at `0x20000`; fresh install: full 8 MB image at `0x0` |
 
 The RCC6 Web companion and networked service builds now use human-first dashboards with traffic bars, delivery and signal analytics, nearby-radio freshness, and coordinate-backed maps that never invent node locations. The MQTT observer/repeater defaults to **3-byte packet hash mode**. Its Windows/Linux configurator covers node name, radio preset and custom radio values, Wi-Fi, MQTT broker selection, and post-setup IP discovery. The preferred public brokers are `mqtt1.meshcore.ca` and `mqtt2.meshcore.ca`; the other upstream-compatible brokers remain selectable/configurable.
+
+For V3, V4, and RCC6 companion Web builds, the LAN WebUI login is `meshcore` plus the eight-letter device key shown before restart. That key is not the home Wi-Fi password.
 
 ## Download the suite
 
