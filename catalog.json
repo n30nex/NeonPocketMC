@@ -197,127 +197,127 @@
           "name": "NeonPocketMC-ULP-Heltec-V3-v1.0.0-rc.4-app.bin",
           "size": 1190832,
           "sha256": "4f72a2a470546549db5e4ee4602e3dc8d9afe21d93818ed24da060aeb61ede98",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-Heltec-V3-v1.0.0-rc.4-app.bin"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-Heltec-V3-v1.0.0-rc.4-app.bin"
         },
         {
           "name": "NeonPocketMC-ULP-Heltec-V3-v1.0.0-rc.4-full-recovery.bin",
           "size": 1256368,
           "sha256": "e055646ce2763b11c40fdb13e039d1500bc54c0d627e3f3eb79251693c712acf",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-Heltec-V3-v1.0.0-rc.4-full-recovery.bin"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-Heltec-V3-v1.0.0-rc.4-full-recovery.bin"
         },
         {
           "name": "NeonPocketMC-ULP-Heltec-V4-v1.0.0-rc.4-app.bin",
           "size": 1188496,
           "sha256": "1cba62aab137161d6f6f179a26ae03b0a034888ad44c65f314aee40fbff5b66a",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-Heltec-V4-v1.0.0-rc.4-app.bin"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-Heltec-V4-v1.0.0-rc.4-app.bin"
         },
         {
           "name": "NeonPocketMC-ULP-Heltec-V4-v1.0.0-rc.4-full-recovery.bin",
           "size": 1254032,
           "sha256": "e9c69d17c6b1bdf6600b20bf309502306e43c19856dfed7220fe65c204baf74a",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-Heltec-V4-v1.0.0-rc.4-full-recovery.bin"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-Heltec-V4-v1.0.0-rc.4-full-recovery.bin"
         },
         {
           "name": "NeonPocketMC-ULP-RAK3401-1W-v1.0.0-rc.4.hex",
           "size": 1403365,
           "sha256": "c658fa04a7907ad378822473cab79f945b652a12b7257a95cd06b2e50e03e900",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-RAK3401-1W-v1.0.0-rc.4.hex"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-RAK3401-1W-v1.0.0-rc.4.hex"
         },
         {
           "name": "NeonPocketMC-ULP-RAK3401-1W-v1.0.0-rc.4.uf2",
           "size": 997888,
           "sha256": "a7cacf5ddda405fed31431ded8081310eb58c517fa89292804f4efc06fff19e3",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-RAK3401-1W-v1.0.0-rc.4.uf2"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-RAK3401-1W-v1.0.0-rc.4.uf2"
         },
         {
           "name": "NeonPocketMC-ULP-RAK4631-v1.0.0-rc.4.hex",
           "size": 1490907,
           "sha256": "4a2e4cb6b4cabf3709c6f96d1212c6b59a7cb774d933dfc2eb1287cb1d702f9c",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-RAK4631-v1.0.0-rc.4.hex"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-RAK4631-v1.0.0-rc.4.hex"
         },
         {
           "name": "NeonPocketMC-ULP-RAK4631-v1.0.0-rc.4.uf2",
           "size": 1060352,
           "sha256": "b8cde875e559dc740a11450dfa794b54785f55456d0e12f982fc1d18d5affdf6",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-RAK4631-v1.0.0-rc.4.uf2"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-RAK4631-v1.0.0-rc.4.uf2"
         },
         {
           "name": "NeonPocketMC-ULP-RC52-Headless-v1.0.0-rc.4.hex",
           "size": 1099193,
           "sha256": "064aca61681bfc9eab6c3041f87203e37bad09d0d4fd0f7b5219b559d4d6f13f",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-RC52-Headless-v1.0.0-rc.4.hex"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-RC52-Headless-v1.0.0-rc.4.hex"
         },
         {
           "name": "NeonPocketMC-ULP-RC52-Headless-v1.0.0-rc.4.uf2",
           "size": 781824,
           "sha256": "b142f3b944175fde45e97f069a5b84bce36c42d642c3bb38690b0e61f11d7c5c",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-RC52-Headless-v1.0.0-rc.4.uf2"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-RC52-Headless-v1.0.0-rc.4.uf2"
         },
         {
           "name": "NeonPocketMC-ULP-RC52-TFT-v1.0.0-rc.4.hex",
           "size": 1156838,
           "sha256": "57cf8fca407b2b2d5870ca8516894df239d1f9c14b7b07d895c55cc45f6f9ee4",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-RC52-TFT-v1.0.0-rc.4.hex"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-RC52-TFT-v1.0.0-rc.4.hex"
         },
         {
           "name": "NeonPocketMC-ULP-RC52-TFT-v1.0.0-rc.4.uf2",
           "size": 822784,
           "sha256": "3af89de7617ed60bfafb39c697bf553f138bfacdcd675a31711f8ab763148ded",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-RC52-TFT-v1.0.0-rc.4.uf2"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-RC52-TFT-v1.0.0-rc.4.uf2"
         },
         {
           "name": "NeonPocketMC-ULP-RCC6-Headless-v1.0.0-rc.4-app.bin",
           "size": 576976,
           "sha256": "8acde24336cd73ed61c7e9c4f79ad1b5280d8ed299fde772df41cc53fab1b0bd",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-RCC6-Headless-v1.0.0-rc.4-app.bin"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-RCC6-Headless-v1.0.0-rc.4-app.bin"
         },
         {
           "name": "NeonPocketMC-ULP-RCC6-Headless-v1.0.0-rc.4-full-recovery.bin",
           "size": 642512,
           "sha256": "cf98b5d1c492e4a14fd8b644ba2924ca20c92006fa9d75141487a6da17c9f6cd",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-RCC6-Headless-v1.0.0-rc.4-full-recovery.bin"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-RCC6-Headless-v1.0.0-rc.4-full-recovery.bin"
         },
         {
           "name": "NeonPocketMC-ULP-RCC6-TFT-v1.0.0-rc.4-app.bin",
           "size": 588272,
           "sha256": "d796d2c20bb28fa31c0d962e53d2d60bd5a3166c5980fcebd8e88100bb077d83",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-RCC6-TFT-v1.0.0-rc.4-app.bin"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-RCC6-TFT-v1.0.0-rc.4-app.bin"
         },
         {
           "name": "NeonPocketMC-ULP-RCC6-TFT-v1.0.0-rc.4-full-recovery.bin",
           "size": 653808,
           "sha256": "91f36428b2f0a78a6643104fddc6ce652668d74f4a67014699e41c5414236f8c",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-RCC6-TFT-v1.0.0-rc.4-full-recovery.bin"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-RCC6-TFT-v1.0.0-rc.4-full-recovery.bin"
         },
         {
           "name": "NeonPocketMC-ULP-Xiao-ESP32S3-v1.0.0-rc.4-app.bin",
           "size": 1153200,
           "sha256": "1b2d6c8b282687b5666a191223ce9b71ceed24fa49a57bb8c47cbab4598ed07b",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-Xiao-ESP32S3-v1.0.0-rc.4-app.bin"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-Xiao-ESP32S3-v1.0.0-rc.4-app.bin"
         },
         {
           "name": "NeonPocketMC-ULP-Xiao-ESP32S3-v1.0.0-rc.4-full-recovery.bin",
           "size": 1218736,
           "sha256": "12b28184ba13161c711397cdb53b91d9b045655c8ac3aab1c422a3f081958547",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-Xiao-ESP32S3-v1.0.0-rc.4-full-recovery.bin"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-Xiao-ESP32S3-v1.0.0-rc.4-full-recovery.bin"
         },
         {
           "name": "NeonPocketMC-ULP-Xiao-nRF52840-v1.0.0-rc.4.hex",
           "size": 1255217,
           "sha256": "625bcee5c56429d24d0c9e31f109ed67c291f68a2699449cf225877cbcad53ec",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-Xiao-nRF52840-v1.0.0-rc.4.hex"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-Xiao-nRF52840-v1.0.0-rc.4.hex"
         },
         {
           "name": "NeonPocketMC-ULP-Xiao-nRF52840-v1.0.0-rc.4.uf2",
           "size": 892928,
           "sha256": "123ef2f13acfca7a6e1027be4db8617db39e3d088f13c9187e838344bd2cc192",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-Xiao-nRF52840-v1.0.0-rc.4.uf2"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-Xiao-nRF52840-v1.0.0-rc.4.uf2"
         },
         {
           "name": "NeonPocketMC-ULP-Configurator.zip",
           "size": 4525,
           "sha256": "12e9155e3c074d4c0cf016e708bab71aadff75415a78f0c3c4483d53280145e7",
-          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/untagged-a64a79f087c1a1925745/NeonPocketMC-ULP-Configurator.zip"
+          "url": "https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-Configurator.zip"
         }
       ]
     },

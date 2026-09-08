@@ -51,6 +51,7 @@ def main() -> None:
             assert len(digest) == 64 and all(c in "0123456789abcdef" for c in digest)
             assert artifact["size"] > 0
             assert artifact["url"].startswith(product["repository"] + "/releases/download/")
+            assert "/releases/download/untagged-" not in artifact["url"], f"draft download URL: {name}"
             assert artifact["url"].endswith("/" + name)
 
     print(f"Verified {len(products)} products and {len(names)} release artifacts")
