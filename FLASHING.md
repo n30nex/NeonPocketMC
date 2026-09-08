@@ -71,11 +71,12 @@ Do not run a full-chip erase. Recovery resets NVS-backed BLE bonds and saved Wi-
 
 ## ULP Solar Repeaters
 
-Use the dedicated [ULP release](https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/tag/v1.0.0-rc.1) and choose the exact V3, V4, RAK4631, RAK3401 1 W, Xiao ESP32-S3, Xiao nRF52840, RCC6, or RC52 image. RCC6 and RC52 have separate headless and TFT files.
+Use the dedicated [ULP release](https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/tag/v1.0.0-rc.4) and choose the exact V3, V4, RAK4631, RAK3401 1 W, Xiao ESP32-S3, Xiao nRF52840, RCC6, or RC52 image. RCC6 and RC52 have separate headless and TFT files.
 
 - ESP32 normal install: flash the matching `*-app.bin` at `0x10000`.
 - nRF52 normal install: enter the board bootloader and copy the matching `.uf2` without erasing or replacing its SoftDevice/bootloader.
 - Keep USB connected after restart and run `NeonPocketMC-ULP-Configurator.zip` to set the name, radio preset/region, transmit power, admin password, and power profile.
+- On macOS/Linux, extract the configurator and run `sh configure-ulp-linux.sh`; select `/dev/cu.usbmodem...` on macOS. The rc.4 configurator also fixes USB setup with existing rc.2/rc.3 firmware, without reflashing.
 - New installs default to `ulp on` (balanced receive duty cycle). Existing saved settings remain authoritative; use `ulp on` once when upgrading an older repeater that had power saving disabled.
 - RX duty cycling can miss packets. Validate coverage and current draw before a remote deployment.
 
