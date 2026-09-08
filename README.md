@@ -136,6 +136,11 @@ Capture provenance and checksums are recorded with each device gallery under [`d
 
 ## ULP Solar Repeaters
 
+[ULP v1.0.0-rc.4](https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/tag/v1.0.0-rc.4)
+includes the corrected [USB configurator](https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/download/v1.0.0-rc.4/NeonPocketMC-ULP-Configurator.zip)
+for Windows, macOS, and Linux. It fixes nRF52 replies and fragmented USB lines.
+Existing rc.2/rc.3 users can use it without reflashing or resetting settings.
+
 [NeonPocketMC ULP Solar Repeaters](https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters) are experimental MeshCore 1.17.1 builds for Heltec V3/V4, RAK4631, RAK3401 1 W, Xiao ESP32-S3, Xiao nRF52840, RCC6, and RC52. RCC6 and RC52 each have separate headless and 220×128 TFT images.
 
 Power saving is **ON by default** on new installs. The recommended balanced profile combines MCU sleep with SX1262 receive duty cycling; the simple USB configurator handles name, radio preset, transmit power, admin password, and the ULP level before deployment. This work is based on and fully attributes [IoTThinks' EasySkyMesh power-saving implementation](https://github.com/IoTThinks/EasySkyMesh/releases/tag/PowerSaving17.1).
@@ -159,7 +164,7 @@ Each product release is pinned to an exact source commit and artifact checksum i
 | RCC6 without TFT | Screenless BLE, native-USB, or Wi-Fi Web/TCP companion | [v1.0.0-rc.5](https://github.com/n30nex/NeonPocketMC-RCC6-Headless/releases/tag/v1.0.0-rc.5) | Flash the selected app `.bin` at `0x10000` |
 | RCC6 | Ultimate MQTT observer/repeater with setup WebUI | [v1.3.0-rc.3](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.3) | Flash the observer app at `0x10000`, then run the configurator |
 | RCC6, TFT optional | Ultimate minimal or full Room Server | [v1.3.0-rc.3](https://github.com/n30nex/NeonPocketMC-RCC6-Repeater/releases/tag/v1.3.0-rc.3) | Pick minimal/full and headless/TFT, then flash its app at `0x10000` |
-| V3, V4, RAK4631, RAK3401 1 W, Xiao ESP32-S3/nRF52840, RCC6, RC52 | Experimental ULP Solar Repeater; RCC6/RC52 headless or TFT | [v1.0.0-rc.2](https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/tag/v1.0.0-rc.2) | Pick the exact board image; use app-only `.bin` at `0x10000` or matching nRF52 `.uf2` |
+| V3, V4, RAK4631, RAK3401 1 W, Xiao ESP32-S3/nRF52840, RCC6, RC52 | Experimental ULP Solar Repeater; RCC6/RC52 headless or TFT | [v1.0.0-rc.4](https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/tag/v1.0.0-rc.4) | Pick the exact board image; use app-only `.bin` at `0x10000` or matching nRF52 `.uf2` |
 | SenseCAP Indicator D1L | DeskOS touch companion with repeater and room management | [v1.7.9](https://github.com/n30nex/DeskOS-MeshCore/releases/tag/v1.7.9) | Existing DeskOS: app at `0x20000`; fresh install: full 8 MB image at `0x0` |
 
 The RCC6 Web companion and networked service builds now use human-first dashboards with traffic bars, delivery and signal analytics, nearby-radio freshness, and coordinate-backed maps that never invent node locations. The MQTT observer/repeater defaults to **3-byte packet hash mode**. Its Windows/Linux configurator covers node name, radio preset and custom radio values, Wi-Fi, MQTT broker selection, and post-setup IP discovery. The preferred public brokers are `mqtt1.meshcore.ca` and `mqtt2.meshcore.ca`; the other upstream-compatible brokers remain selectable/configurable.
