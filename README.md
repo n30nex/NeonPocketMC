@@ -134,6 +134,22 @@ These frames were captured from the OLED framebuffer running on the physical Hel
 
 Capture provenance and checksums are recorded with each device gallery under [`docs/images`](docs/images).
 
+## Heltec V4.2 Solar BLE companion
+
+[Solar BLE RC1](https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v1.17.1-v42-solar-ble-rc.1)
+is a separate test candidate for the original Heltec V4.2 with a single-cell
+LiPo and regulated 5 V solar input. It retains standard MeshCore/MeshMapper
+BLE access and continuous LoRa receive, reduces idle overhead, and adds
+60-second battery checks after protective low-voltage sleep.
+
+USB startup and a phone connection were checked on one V4.2. Battery-only
+reconnection, discharge/recharge recovery and overnight endurance remain under
+test; desktop BLE reads have timed out and are being investigated. The board's
+approximately 540 mA solar charger and lack of cell-temperature charge control
+remain hardware limits. V4 R8 is excluded. Read the
+[installation and test guide](https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v1.17.1-v42-solar-ble-rc.1/START_HERE.md)
+before using the [Solar BLE flasher profile](https://flasher.canadaverse.org/?device=heltec-v4&profile=solar-ble-companion).
+
 ## ULP Solar Repeaters
 
 [ULP v1.0.0-rc.4](https://github.com/n30nex/NeonPocketMC-ULP-Solar-Repeaters/releases/tag/v1.0.0-rc.4)
@@ -155,6 +171,7 @@ Each product release is pinned to an exact source commit and artifact checksum i
 |---|---|---|---|
 | Heltec WiFi LoRa 32 V3 + OLED | BLE, native-USB, Ultimate Web companion, or Ultimate Repeater WebUI | [v2.0.0-rc.2](https://github.com/n30nex/NeonPocketMC-Heltec-V3/releases/tag/v2.0.0-rc.2) | Flash the selected app `.bin` at `0x10000` |
 | Heltec WiFi LoRa 32 V4 + OLED | BLE, native-USB, Ultimate Web companion, or Ultimate Repeater WebUI | [v2.0.0-rc.2](https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v2.0.0-rc.2) | Flash the selected app `.bin` at `0x10000` |
+| Heltec WiFi LoRa 32 V4.2 + OLED | Experimental Solar BLE companion, continuous LoRa receive | [Solar BLE RC1](https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v1.17.1-v42-solar-ble-rc.1) | App-only update at `0x10000`; read the test guide |
 | RC52-L62 + NV3001B TFT | BLE or native-USB companion with NeonPocket UI | [v1.1.0-rc.4](https://github.com/n30nex/NeonPocketMC-RC52/releases/tag/v1.1.0-rc.4) | Copy the selected `.uf2` to the RC52 bootloader drive |
 | RC52-L62 without TFT | Screenless BLE companion; pairing PIN `123456` | [v1.0.0-rc.1](https://github.com/n30nex/NeonPocketMC-RC52-Headless/releases/tag/v1.0.0-rc.1) | Copy the BLE `.uf2` to the RC52 bootloader drive |
 | RC52-L62 | Headless low-power repeater | [v1.1.0-rc.2](https://github.com/n30nex/NeonPocketMC-RC52-Repeater/releases/tag/v1.1.0-rc.2) | Copy the repeater `.uf2` to the RC52 bootloader drive |
@@ -179,12 +196,13 @@ Exact install filenames, sizes, SHA-256 values, release links, and source commit
 
 ## Source layout
 
-The ten firmware histories intentionally remain separate because they target different chips, bootloaders, transports, displays, and deployment roles. This repository indexes them as pinned Git submodules:
+The firmware histories and separate release candidates remain pinned independently because they target different chips, bootloaders, transports, displays, and deployment roles. This repository indexes them as Git submodules:
 
 ```text
 firmware/
   heltec-v3-companion/
   heltec-v4-companion/
+  heltec-v42-solar-companion/
   rc52-companion/
   rc52-headless-companion/
   rc52-repeater/

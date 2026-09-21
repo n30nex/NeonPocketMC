@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "suite_version": "1.10.0-rc.3",
+  "suite_version": "1.11.0-rc.1",
   "products": [
     {
       "id": "heltec-v3-companion",
@@ -46,6 +46,33 @@
         {"name": "NeonPocketMC-Heltec-V4-Ultimate-Web-recovery-preserves-settings.bin", "size": 1316352, "sha256": "68699b8a6b88dd8ec8f11baa06130fd0d8b15ce0af0e4c2b2e4f649793193565", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v2.0.0-rc.2/NeonPocketMC-Heltec-V4-Ultimate-Web-recovery-preserves-settings.bin"},
         {"name": "NeonPocketMC-Heltec-V4-Ultimate-Repeater-Web-app.bin", "size": 1115408, "sha256": "c538b931b41e0bc29feab4f2c65a9d181659534a40c0bd38b2b4ef5ab6f23671", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V4-Ultimate-Repeater-Web-app.bin"},
         {"name": "NeonPocketMC-Heltec-V4-Ultimate-Repeater-Web-recovery-preserves-settings.bin", "size": 1180944, "sha256": "7551875a375a2fec1273b720f6244a7d27cdbecf37d633d4ccaeb71dd969b151", "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v2.0.0-rc.1/NeonPocketMC-Heltec-V4-Ultimate-Repeater-Web-recovery-preserves-settings.bin"}
+      ]
+    },
+    {
+      "id": "heltec-v42-solar-companion",
+      "hardware": "Heltec WiFi LoRa 32 V4.2 with integrated OLED, 16 MB flash and 2 MB PSRAM; V4 R8 excluded",
+      "role": "Experimental solar BLE companion with continuous LoRa receive and timed low-battery recovery",
+      "repository": "https://github.com/n30nex/NeonPocketMC-Heltec-V4",
+      "release": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/tag/v1.17.1-v42-solar-ble-rc.1",
+      "tag": "v1.17.1-v42-solar-ble-rc.1",
+      "commit": "183a0eec45e440f9cd0a496884e5a3247a90c78d",
+      "submodule": "firmware/heltec-v42-solar-companion",
+      "profiles": [
+        "solar-ble-companion"
+      ],
+      "artifacts": [
+        {
+          "name": "NeonPocketMC-Heltec-V4-Solar-BLE-app.bin",
+          "size": 1291504,
+          "sha256": "8bdb99e2d6cd044cadc784ea00b341f336bdefb0722390b9773910349e2db3e9",
+          "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v1.17.1-v42-solar-ble-rc.1/NeonPocketMC-Heltec-V4-Solar-BLE-app.bin"
+        },
+        {
+          "name": "NeonPocketMC-Heltec-V4-Solar-BLE-recovery-preserves-settings.bin",
+          "size": 1357040,
+          "sha256": "953dc458d641b9766cd280085cdd54889a6110bdc7fe55512348a1f07cd88b3c",
+          "url": "https://github.com/n30nex/NeonPocketMC-Heltec-V4/releases/download/v1.17.1-v42-solar-ble-rc.1/NeonPocketMC-Heltec-V4-Solar-BLE-recovery-preserves-settings.bin"
+        }
       ]
     },
     {
