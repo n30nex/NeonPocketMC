@@ -14,9 +14,9 @@ jobs:
     steps:
       - name: Check out pinned suite source
         uses: actions/checkout@v4
-      - name: Check out the five RadioCore product repositories
+      - name: Check out RadioCore and Solar BLE source pins
         run: |
-          git submodule sync -- firmware/rc52-companion firmware/rc52-headless-companion firmware/rc52-repeater firmware/rcc6-companion firmware/rcc6-mqtt-repeater
-          git submodule update --init --depth 1 -- firmware/rc52-companion firmware/rc52-headless-companion firmware/rc52-repeater firmware/rcc6-companion firmware/rcc6-mqtt-repeater
+          git submodule sync -- firmware/rc52-companion firmware/rc52-headless-companion firmware/rc52-repeater firmware/rcc6-companion firmware/rcc6-mqtt-repeater firmware/heltec-v42-solar-companion
+          git submodule update --init --depth 1 -- firmware/rc52-companion firmware/rc52-headless-companion firmware/rc52-repeater firmware/rcc6-companion firmware/rcc6-mqtt-repeater firmware/heltec-v42-solar-companion
       - name: Validate catalog and submodule pins
         run: python scripts/verify_catalog.py
